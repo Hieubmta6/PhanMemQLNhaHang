@@ -32,20 +32,32 @@
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Luu = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Sua = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txb_NVLP = new DevExpress.XtraEditors.TextEdit();
-            this.txb_KN = new DevExpress.XtraEditors.TextEdit();
-            this.txb_ĐT = new DevExpress.XtraEditors.TextEdit();
-            this.txb_DG = new DevExpress.XtraEditors.TextEdit();
-            this.cbo_NVLP = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cbo_KN = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.cbo_ĐT = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbo_KN = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbo_NVLP = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.txb_DG = new DevExpress.XtraEditors.TextEdit();
+            this.txb_ĐT = new DevExpress.XtraEditors.TextEdit();
+            this.txb_KN = new DevExpress.XtraEditors.TextEdit();
+            this.txb_NVLP = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.cbo_NgayLap = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbo_NgayHet = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbo_LoaiChung = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txb_MaPhieu = new DevExpress.XtraEditors.TextEdit();
@@ -54,10 +66,6 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.cbo_NgayLap = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -69,43 +77,35 @@
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.txb_TSL = new DevExpress.XtraEditors.TextEdit();
-            this.txb_TH = new DevExpress.XtraEditors.TextEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Sua = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Luu = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
+            this.txb_TH = new DevExpress.XtraEditors.TextEdit();
+            this.txb_TSL = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_ĐT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_KN.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_NVLP.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_DG.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_ĐT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_KN.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_NVLP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_NVLP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_KN.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_ĐT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_DG.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_NVLP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_KN.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_ĐT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayLap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayHet.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_LoaiChung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_MaPhieu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_LC.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayLap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_TSL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_TH.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_TSL.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -118,10 +118,8 @@
             // 
             // fluentDesignFormControl1
             // 
-            this.fluentDesignFormControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.fluentDesignFormControl1.Size = new System.Drawing.Size(800, 0);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
@@ -143,6 +141,88 @@
             this.panelControl1.Size = new System.Drawing.Size(1171, 57);
             this.panelControl1.TabIndex = 0;
             // 
+            // btn_Dong
+            // 
+            this.btn_Dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Dong.ImageOptions.SvgImage")));
+            this.btn_Dong.Location = new System.Drawing.Point(1032, 14);
+            this.btn_Dong.Name = "btn_Dong";
+            this.btn_Dong.Size = new System.Drawing.Size(94, 29);
+            this.btn_Dong.TabIndex = 8;
+            this.btn_Dong.Text = "Đóng";
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Luu.ImageOptions.SvgImage")));
+            this.btn_Luu.Location = new System.Drawing.Point(916, 14);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(94, 29);
+            this.btn_Luu.TabIndex = 7;
+            this.btn_Luu.Text = "Lưu";
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xoa.ImageOptions.SvgImage")));
+            this.btn_Xoa.Location = new System.Drawing.Point(816, 14);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(94, 29);
+            this.btn_Xoa.TabIndex = 6;
+            this.btn_Xoa.Text = "Xóa";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Them.ImageOptions.SvgImage")));
+            this.btn_Them.Location = new System.Drawing.Point(613, 14);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(94, 29);
+            this.btn_Them.TabIndex = 5;
+            this.btn_Them.Text = "Thêm";
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Sua.ImageOptions.SvgImage")));
+            this.btn_Sua.Location = new System.Drawing.Point(713, 14);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(94, 29);
+            this.btn_Sua.TabIndex = 4;
+            this.btn_Sua.Text = "Sửa";
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Refresh.ImageOptions.SvgImage")));
+            this.btn_Refresh.Location = new System.Drawing.Point(513, 14);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(94, 29);
+            this.btn_Refresh.TabIndex = 3;
+            this.btn_Refresh.Text = "Refresh";
+            // 
+            // btn_InAn
+            // 
+            this.btn_InAn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_InAn.ImageOptions.SvgImage")));
+            this.btn_InAn.Location = new System.Drawing.Point(413, 14);
+            this.btn_InAn.Name = "btn_InAn";
+            this.btn_InAn.Size = new System.Drawing.Size(94, 29);
+            this.btn_InAn.TabIndex = 2;
+            this.btn_InAn.Text = "In ấn";
+            // 
+            // btn_Export
+            // 
+            this.btn_Export.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Export.ImageOptions.SvgImage")));
+            this.btn_Export.Location = new System.Drawing.Point(313, 14);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(94, 29);
+            this.btn_Export.TabIndex = 1;
+            this.btn_Export.Text = "Export";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(12, 12);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(259, 40);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "PHIẾU NHẬP KHO";
+            // 
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.cbo_ĐT);
@@ -160,6 +240,93 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(577, 155);
             this.panelControl2.TabIndex = 1;
+            // 
+            // cbo_ĐT
+            // 
+            this.cbo_ĐT.Location = new System.Drawing.Point(225, 41);
+            this.cbo_ĐT.Name = "cbo_ĐT";
+            this.cbo_ĐT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbo_ĐT.Size = new System.Drawing.Size(271, 22);
+            this.cbo_ĐT.TabIndex = 11;
+            // 
+            // cbo_KN
+            // 
+            this.cbo_KN.Location = new System.Drawing.Point(225, 77);
+            this.cbo_KN.Name = "cbo_KN";
+            this.cbo_KN.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbo_KN.Size = new System.Drawing.Size(271, 22);
+            this.cbo_KN.TabIndex = 10;
+            // 
+            // cbo_NVLP
+            // 
+            this.cbo_NVLP.Location = new System.Drawing.Point(225, 5);
+            this.cbo_NVLP.Name = "cbo_NVLP";
+            this.cbo_NVLP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbo_NVLP.Size = new System.Drawing.Size(271, 22);
+            this.cbo_NVLP.TabIndex = 9;
+            // 
+            // txb_DG
+            // 
+            this.txb_DG.Location = new System.Drawing.Point(102, 116);
+            this.txb_DG.Name = "txb_DG";
+            this.txb_DG.Size = new System.Drawing.Size(394, 22);
+            this.txb_DG.TabIndex = 8;
+            // 
+            // txb_ĐT
+            // 
+            this.txb_ĐT.Location = new System.Drawing.Point(102, 41);
+            this.txb_ĐT.Name = "txb_ĐT";
+            this.txb_ĐT.Size = new System.Drawing.Size(125, 22);
+            this.txb_ĐT.TabIndex = 7;
+            // 
+            // txb_KN
+            // 
+            this.txb_KN.Location = new System.Drawing.Point(102, 77);
+            this.txb_KN.Name = "txb_KN";
+            this.txb_KN.Size = new System.Drawing.Size(125, 22);
+            this.txb_KN.TabIndex = 6;
+            // 
+            // txb_NVLP
+            // 
+            this.txb_NVLP.Location = new System.Drawing.Point(102, 5);
+            this.txb_NVLP.Name = "txb_NVLP";
+            this.txb_NVLP.Size = new System.Drawing.Size(125, 22);
+            this.txb_NVLP.TabIndex = 5;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(11, 119);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(50, 17);
+            this.labelControl5.TabIndex = 4;
+            this.labelControl5.Text = "Diễn giải";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(11, 82);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(60, 17);
+            this.labelControl4.TabIndex = 3;
+            this.labelControl4.Text = "Kho Nhập";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(11, 46);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(46, 17);
+            this.labelControl3.TabIndex = 2;
+            this.labelControl3.Text = "Đối Tác";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(11, 5);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(75, 17);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "NV lập phiếu";
             // 
             // panelControl3
             // 
@@ -181,102 +348,38 @@
             this.panelControl3.TabIndex = 2;
             this.panelControl3.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl3_Paint);
             // 
-            // labelControl1
+            // labelControl11
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(12, 12);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(270, 41);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "PHIẾU NHẬP KHO";
+            this.labelControl11.Location = new System.Drawing.Point(311, 120);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(111, 17);
+            this.labelControl11.TabIndex = 25;
+            this.labelControl11.Text = "Khóa sổ chứng từ";
             // 
-            // labelControl2
+            // hyperlinkLabelControl1
             // 
-            this.labelControl2.Location = new System.Drawing.Point(11, 5);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(75, 17);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "NV lập phiếu";
+            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(104, 122);
+            this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
+            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(141, 16);
+            this.hyperlinkLabelControl1.TabIndex = 24;
+            this.hyperlinkLabelControl1.Text = "Import phiếu nhập kho";
             // 
-            // labelControl3
+            // labelControl10
             // 
-            this.labelControl3.Location = new System.Drawing.Point(11, 46);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(46, 17);
-            this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "Đối Tác";
+            this.labelControl10.Location = new System.Drawing.Point(278, 86);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(48, 16);
+            this.labelControl10.TabIndex = 23;
+            this.labelControl10.Text = "Ngày HT";
             // 
-            // labelControl4
+            // cbo_NgayLap
             // 
-            this.labelControl4.Location = new System.Drawing.Point(11, 82);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(60, 17);
-            this.labelControl4.TabIndex = 3;
-            this.labelControl4.Text = "Kho Nhập";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(11, 119);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(50, 17);
-            this.labelControl5.TabIndex = 4;
-            this.labelControl5.Text = "Diễn giải";
-            // 
-            // txb_NVLP
-            // 
-            this.txb_NVLP.Location = new System.Drawing.Point(102, 5);
-            this.txb_NVLP.Name = "txb_NVLP";
-            this.txb_NVLP.Size = new System.Drawing.Size(125, 22);
-            this.txb_NVLP.TabIndex = 5;
-            // 
-            // txb_KN
-            // 
-            this.txb_KN.Location = new System.Drawing.Point(102, 77);
-            this.txb_KN.Name = "txb_KN";
-            this.txb_KN.Size = new System.Drawing.Size(125, 22);
-            this.txb_KN.TabIndex = 6;
-            // 
-            // txb_ĐT
-            // 
-            this.txb_ĐT.Location = new System.Drawing.Point(102, 41);
-            this.txb_ĐT.Name = "txb_ĐT";
-            this.txb_ĐT.Size = new System.Drawing.Size(125, 22);
-            this.txb_ĐT.TabIndex = 7;
-            // 
-            // txb_DG
-            // 
-            this.txb_DG.Location = new System.Drawing.Point(102, 116);
-            this.txb_DG.Name = "txb_DG";
-            this.txb_DG.Size = new System.Drawing.Size(394, 22);
-            this.txb_DG.TabIndex = 8;
-            // 
-            // cbo_NVLP
-            // 
-            this.cbo_NVLP.Location = new System.Drawing.Point(225, 5);
-            this.cbo_NVLP.Name = "cbo_NVLP";
-            this.cbo_NVLP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbo_NgayLap.Location = new System.Drawing.Point(104, 83);
+            this.cbo_NgayLap.Name = "cbo_NgayLap";
+            this.cbo_NgayLap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbo_NVLP.Size = new System.Drawing.Size(271, 22);
-            this.cbo_NVLP.TabIndex = 9;
-            // 
-            // cbo_KN
-            // 
-            this.cbo_KN.Location = new System.Drawing.Point(225, 77);
-            this.cbo_KN.Name = "cbo_KN";
-            this.cbo_KN.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbo_KN.Size = new System.Drawing.Size(271, 22);
-            this.cbo_KN.TabIndex = 10;
-            // 
-            // cbo_ĐT
-            // 
-            this.cbo_ĐT.Location = new System.Drawing.Point(225, 41);
-            this.cbo_ĐT.Name = "cbo_ĐT";
-            this.cbo_ĐT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbo_ĐT.Size = new System.Drawing.Size(271, 22);
-            this.cbo_ĐT.TabIndex = 11;
+            this.cbo_NgayLap.Size = new System.Drawing.Size(144, 22);
+            this.cbo_NgayLap.TabIndex = 22;
             // 
             // cbo_NgayHet
             // 
@@ -340,39 +443,6 @@
             this.labelControl9.Size = new System.Drawing.Size(68, 17);
             this.labelControl9.TabIndex = 12;
             this.labelControl9.Text = "Loại chứng";
-            // 
-            // cbo_NgayLap
-            // 
-            this.cbo_NgayLap.Location = new System.Drawing.Point(104, 83);
-            this.cbo_NgayLap.Name = "cbo_NgayLap";
-            this.cbo_NgayLap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbo_NgayLap.Size = new System.Drawing.Size(144, 22);
-            this.cbo_NgayLap.TabIndex = 22;
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Location = new System.Drawing.Point(278, 86);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(48, 16);
-            this.labelControl10.TabIndex = 23;
-            this.labelControl10.Text = "Ngày HT";
-            // 
-            // hyperlinkLabelControl1
-            // 
-            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(104, 122);
-            this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
-            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(141, 16);
-            this.hyperlinkLabelControl1.TabIndex = 24;
-            this.hyperlinkLabelControl1.Text = "Import phiếu nhập kho";
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Location = new System.Drawing.Point(311, 120);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(111, 17);
-            this.labelControl11.TabIndex = 25;
-            this.labelControl11.Text = "Khóa sổ chứng từ";
             // 
             // gridControl1
             // 
@@ -490,28 +560,6 @@
             this.panelControl4.Size = new System.Drawing.Size(1171, 52);
             this.panelControl4.TabIndex = 4;
             // 
-            // labelControl12
-            // 
-            this.labelControl12.Location = new System.Drawing.Point(26, 23);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(89, 17);
-            this.labelControl12.TabIndex = 12;
-            this.labelControl12.Text = "Tổng số lượng";
-            // 
-            // txb_TSL
-            // 
-            this.txb_TSL.Location = new System.Drawing.Point(139, 20);
-            this.txb_TSL.Name = "txb_TSL";
-            this.txb_TSL.Size = new System.Drawing.Size(125, 22);
-            this.txb_TSL.TabIndex = 12;
-            // 
-            // txb_TH
-            // 
-            this.txb_TH.Location = new System.Drawing.Point(474, 18);
-            this.txb_TH.Name = "txb_TH";
-            this.txb_TH.Size = new System.Drawing.Size(125, 22);
-            this.txb_TH.TabIndex = 13;
-            // 
             // labelControl13
             // 
             this.labelControl13.Location = new System.Drawing.Point(380, 21);
@@ -520,77 +568,27 @@
             this.labelControl13.TabIndex = 14;
             this.labelControl13.Text = "Tiền Hàng";
             // 
-            // btn_Export
+            // txb_TH
             // 
-            this.btn_Export.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Export.ImageOptions.SvgImage")));
-            this.btn_Export.Location = new System.Drawing.Point(313, 14);
-            this.btn_Export.Name = "btn_Export";
-            this.btn_Export.Size = new System.Drawing.Size(94, 29);
-            this.btn_Export.TabIndex = 1;
-            this.btn_Export.Text = "Export";
+            this.txb_TH.Location = new System.Drawing.Point(474, 18);
+            this.txb_TH.Name = "txb_TH";
+            this.txb_TH.Size = new System.Drawing.Size(125, 22);
+            this.txb_TH.TabIndex = 13;
             // 
-            // btn_InAn
+            // txb_TSL
             // 
-            this.btn_InAn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_InAn.ImageOptions.SvgImage")));
-            this.btn_InAn.Location = new System.Drawing.Point(413, 14);
-            this.btn_InAn.Name = "btn_InAn";
-            this.btn_InAn.Size = new System.Drawing.Size(94, 29);
-            this.btn_InAn.TabIndex = 2;
-            this.btn_InAn.Text = "In ấn";
+            this.txb_TSL.Location = new System.Drawing.Point(139, 20);
+            this.txb_TSL.Name = "txb_TSL";
+            this.txb_TSL.Size = new System.Drawing.Size(125, 22);
+            this.txb_TSL.TabIndex = 12;
             // 
-            // btn_Refresh
+            // labelControl12
             // 
-            this.btn_Refresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Refresh.ImageOptions.SvgImage")));
-            this.btn_Refresh.Location = new System.Drawing.Point(513, 14);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(94, 29);
-            this.btn_Refresh.TabIndex = 3;
-            this.btn_Refresh.Text = "Refresh";
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Sua.ImageOptions.SvgImage")));
-            this.btn_Sua.Location = new System.Drawing.Point(713, 14);
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(94, 29);
-            this.btn_Sua.TabIndex = 4;
-            this.btn_Sua.Text = "Sửa";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Them.ImageOptions.SvgImage")));
-            this.btn_Them.Location = new System.Drawing.Point(613, 14);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(94, 29);
-            this.btn_Them.TabIndex = 5;
-            this.btn_Them.Text = "Thêm";
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xoa.ImageOptions.SvgImage")));
-            this.btn_Xoa.Location = new System.Drawing.Point(816, 14);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(94, 29);
-            this.btn_Xoa.TabIndex = 6;
-            this.btn_Xoa.Text = "Xóa";
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Luu.ImageOptions.SvgImage")));
-            this.btn_Luu.Location = new System.Drawing.Point(916, 14);
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(94, 29);
-            this.btn_Luu.TabIndex = 7;
-            this.btn_Luu.Text = "Lưu";
-            // 
-            // btn_Dong
-            // 
-            this.btn_Dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Dong.ImageOptions.SvgImage")));
-            this.btn_Dong.Location = new System.Drawing.Point(1032, 14);
-            this.btn_Dong.Name = "btn_Dong";
-            this.btn_Dong.Size = new System.Drawing.Size(94, 29);
-            this.btn_Dong.TabIndex = 8;
-            this.btn_Dong.Text = "Đóng";
+            this.labelControl12.Location = new System.Drawing.Point(26, 23);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(89, 17);
+            this.labelControl12.TabIndex = 12;
+            this.labelControl12.Text = "Tổng số lượng";
             // 
             // Frm_PhieuNhapKho
             // 
@@ -611,28 +609,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_ĐT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_KN.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_NVLP.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_DG.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_ĐT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_KN.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_NVLP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_NVLP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_KN.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_ĐT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_DG.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_NVLP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_KN.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_ĐT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayLap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayHet.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_LoaiChung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_MaPhieu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_LC.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayLap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             this.panelControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txb_TSL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_TH.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txb_TSL.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
