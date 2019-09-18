@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Frm_PhieuNhapKho : DevExpress.XtraEditors.XtraForm
+    public partial class frm_BoPhanNhanVien : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        public Frm_PhieuNhapKho()
+        public frm_BoPhanNhanVien()
         {
             InitializeComponent();
         }
 
-        private void panelControl3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_Dong_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn có chắc muốn thoát không?",
-                "Error", MessageBoxButtons.YesNoCancel);
-            Application.Exit();
+            DialogResult h = MessageBox.Show("Do you wat exit program ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            if (h == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            
         }
     }
 }

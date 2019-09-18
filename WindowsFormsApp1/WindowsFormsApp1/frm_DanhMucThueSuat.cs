@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Frm_PhieuNhapKho : DevExpress.XtraEditors.XtraForm
+    public partial class frm_DanhMucThueSuat : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        public Frm_PhieuNhapKho()
+        public frm_DanhMucThueSuat()
         {
             InitializeComponent();
         }
 
-        private void panelControl3_Paint(object sender, PaintEventArgs e)
+        private void labelControl4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_Dong_Click(object sender, EventArgs e)
+        private void simpleButton1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn có chắc muốn thoát không?",
                 "Error", MessageBoxButtons.YesNoCancel);

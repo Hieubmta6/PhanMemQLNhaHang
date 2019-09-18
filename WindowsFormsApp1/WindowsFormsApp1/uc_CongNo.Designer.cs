@@ -30,14 +30,14 @@
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.LB_CNPTraChoTCNCC = new DevExpress.XtraEditors.LabelControl();
-            this.lb_CNPTraCMotNCC = new DevExpress.XtraEditors.LabelControl();
-            this.lb_CNPTraTheoChungTu = new DevExpress.XtraEditors.LabelControl();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.lb_CNPTCuaMotKH = new DevExpress.XtraEditors.LabelControl();
             this.lb_CNPhaiThuTheoChungTu = new DevExpress.XtraEditors.LabelControl();
             this.lb_CNPhaiThuTheoNhomKH = new DevExpress.XtraEditors.LabelControl();
             this.lb_CNPhaiThuChoTatCaKH = new DevExpress.XtraEditors.LabelControl();
+            this.LB_CNPTraChoTCNCC = new DevExpress.XtraEditors.LabelControl();
+            this.lb_CNPTraCMotNCC = new DevExpress.XtraEditors.LabelControl();
+            this.lb_CNPTraTheoChungTu = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -65,53 +65,6 @@
             this.groupControl1.Size = new System.Drawing.Size(781, 637);
             this.groupControl1.TabIndex = 8;
             this.groupControl1.Text = "Nhập Liệu";
-            // 
-            // LB_CNPTraChoTCNCC
-            // 
-            this.LB_CNPTraChoTCNCC.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_CNPTraChoTCNCC.Appearance.ForeColor = System.Drawing.Color.Lime;
-            this.LB_CNPTraChoTCNCC.Appearance.Options.UseFont = true;
-            this.LB_CNPTraChoTCNCC.Appearance.Options.UseForeColor = true;
-            this.LB_CNPTraChoTCNCC.Location = new System.Drawing.Point(5, 45);
-            this.LB_CNPTraChoTCNCC.Name = "LB_CNPTraChoTCNCC";
-            this.LB_CNPTraChoTCNCC.Size = new System.Drawing.Size(485, 40);
-            this.LB_CNPTraChoTCNCC.TabIndex = 0;
-            this.LB_CNPTraChoTCNCC.Text = "Công nợ phải trả cho tất cho NCC";
-            // 
-            // lb_CNPTraCMotNCC
-            // 
-            this.lb_CNPTraCMotNCC.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_CNPTraCMotNCC.Appearance.ForeColor = System.Drawing.Color.Lime;
-            this.lb_CNPTraCMotNCC.Appearance.Options.UseFont = true;
-            this.lb_CNPTraCMotNCC.Appearance.Options.UseForeColor = true;
-            this.lb_CNPTraCMotNCC.Location = new System.Drawing.Point(5, 115);
-            this.lb_CNPTraCMotNCC.Name = "lb_CNPTraCMotNCC";
-            this.lb_CNPTraCMotNCC.Size = new System.Drawing.Size(572, 40);
-            this.lb_CNPTraCMotNCC.TabIndex = 1;
-            this.lb_CNPTraCMotNCC.Text = "Công nợ phải trả cho một nhà cung cấp";
-            // 
-            // lb_CNPTraTheoChungTu
-            // 
-            this.lb_CNPTraTheoChungTu.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_CNPTraTheoChungTu.Appearance.ForeColor = System.Drawing.Color.Lime;
-            this.lb_CNPTraTheoChungTu.Appearance.Options.UseFont = true;
-            this.lb_CNPTraTheoChungTu.Appearance.Options.UseForeColor = true;
-            this.lb_CNPTraTheoChungTu.Location = new System.Drawing.Point(5, 184);
-            this.lb_CNPTraTheoChungTu.Name = "lb_CNPTraTheoChungTu";
-            this.lb_CNPTraTheoChungTu.Size = new System.Drawing.Size(456, 40);
-            this.lb_CNPTraTheoChungTu.TabIndex = 2;
-            this.lb_CNPTraTheoChungTu.Text = "Công nợ phải trả theo chứng từ";
-            // 
-            // groupControl3
-            // 
-            this.groupControl3.Controls.Add(this.lb_CNPTraTheoChungTu);
-            this.groupControl3.Controls.Add(this.lb_CNPTraCMotNCC);
-            this.groupControl3.Controls.Add(this.LB_CNPTraChoTCNCC);
-            this.groupControl3.Location = new System.Drawing.Point(785, 26);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(1058, 637);
-            this.groupControl3.TabIndex = 9;
-            this.groupControl3.Text = "Danh mục khác";
             // 
             // lb_CNPTCuaMotKH
             // 
@@ -160,6 +113,53 @@
             this.lb_CNPhaiThuChoTatCaKH.Size = new System.Drawing.Size(606, 40);
             this.lb_CNPhaiThuChoTatCaKH.TabIndex = 6;
             this.lb_CNPhaiThuChoTatCaKH.Text = "Công nợ phải thu cho tất cả khách hàng...";
+            // 
+            // LB_CNPTraChoTCNCC
+            // 
+            this.LB_CNPTraChoTCNCC.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_CNPTraChoTCNCC.Appearance.ForeColor = System.Drawing.Color.Lime;
+            this.LB_CNPTraChoTCNCC.Appearance.Options.UseFont = true;
+            this.LB_CNPTraChoTCNCC.Appearance.Options.UseForeColor = true;
+            this.LB_CNPTraChoTCNCC.Location = new System.Drawing.Point(5, 45);
+            this.LB_CNPTraChoTCNCC.Name = "LB_CNPTraChoTCNCC";
+            this.LB_CNPTraChoTCNCC.Size = new System.Drawing.Size(485, 40);
+            this.LB_CNPTraChoTCNCC.TabIndex = 0;
+            this.LB_CNPTraChoTCNCC.Text = "Công nợ phải trả cho tất cho NCC";
+            // 
+            // lb_CNPTraCMotNCC
+            // 
+            this.lb_CNPTraCMotNCC.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_CNPTraCMotNCC.Appearance.ForeColor = System.Drawing.Color.Lime;
+            this.lb_CNPTraCMotNCC.Appearance.Options.UseFont = true;
+            this.lb_CNPTraCMotNCC.Appearance.Options.UseForeColor = true;
+            this.lb_CNPTraCMotNCC.Location = new System.Drawing.Point(5, 115);
+            this.lb_CNPTraCMotNCC.Name = "lb_CNPTraCMotNCC";
+            this.lb_CNPTraCMotNCC.Size = new System.Drawing.Size(572, 40);
+            this.lb_CNPTraCMotNCC.TabIndex = 1;
+            this.lb_CNPTraCMotNCC.Text = "Công nợ phải trả cho một nhà cung cấp";
+            // 
+            // lb_CNPTraTheoChungTu
+            // 
+            this.lb_CNPTraTheoChungTu.Appearance.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_CNPTraTheoChungTu.Appearance.ForeColor = System.Drawing.Color.Lime;
+            this.lb_CNPTraTheoChungTu.Appearance.Options.UseFont = true;
+            this.lb_CNPTraTheoChungTu.Appearance.Options.UseForeColor = true;
+            this.lb_CNPTraTheoChungTu.Location = new System.Drawing.Point(5, 184);
+            this.lb_CNPTraTheoChungTu.Name = "lb_CNPTraTheoChungTu";
+            this.lb_CNPTraTheoChungTu.Size = new System.Drawing.Size(456, 40);
+            this.lb_CNPTraTheoChungTu.TabIndex = 2;
+            this.lb_CNPTraTheoChungTu.Text = "Công nợ phải trả theo chứng từ";
+            // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.lb_CNPTraTheoChungTu);
+            this.groupControl3.Controls.Add(this.lb_CNPTraCMotNCC);
+            this.groupControl3.Controls.Add(this.LB_CNPTraChoTCNCC);
+            this.groupControl3.Location = new System.Drawing.Point(785, 26);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(1058, 637);
+            this.groupControl3.TabIndex = 9;
+            this.groupControl3.Text = "Danh mục khác";
             // 
             // uc_CongNo
             // 

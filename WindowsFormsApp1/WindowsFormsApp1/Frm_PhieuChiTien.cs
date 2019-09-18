@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Frm_PhieuNhapKho : DevExpress.XtraEditors.XtraForm
+    public partial class Frm_PhieuChiTien : DevExpress.XtraEditors.XtraForm
     {
-        public Frm_PhieuNhapKho()
+        public Frm_PhieuChiTien()
         {
             InitializeComponent();
-        }
-
-        private void panelControl3_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btn_Dong_Click(object sender, EventArgs e)

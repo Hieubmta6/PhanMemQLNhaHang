@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Frm_PhieuNhapKho : DevExpress.XtraEditors.XtraForm
+    public partial class frm_DanhSachKhachHang : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public Frm_PhieuNhapKho()
+        public frm_DanhSachKhachHang()
         {
             InitializeComponent();
         }
 
-        private void panelControl3_Paint(object sender, PaintEventArgs e)
+        private void panelControl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
         {
 
         }

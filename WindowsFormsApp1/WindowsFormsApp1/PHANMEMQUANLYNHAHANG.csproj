@@ -48,8 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Mvvm.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -63,8 +65,12 @@
     <Reference Include="DevExpress.XtraScheduler.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraScheduler.v19.1.GoogleCalendar, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,46 +80,95 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="buttoncontrol.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DanhSachKhachHang.cs">
+    <Compile Include="frm_BoPhanNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DanhSachKhachHang.Designer.cs">
-      <DependentUpon>DanhSachKhachHang.cs</DependentUpon>
+    <Compile Include="frm_BoPhanNhanVien.Designer.cs">
+      <DependentUpon>frm_BoPhanNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Danhsachnhacungcap.cs">
+    <Compile Include="frm_DanhMucPhi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Danhsachnhacungcap.Designer.cs">
-      <DependentUpon>Danhsachnhacungcap.cs</DependentUpon>
+    <Compile Include="frm_DanhMucPhi.Designer.cs">
+      <DependentUpon>frm_DanhMucPhi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DanhSchNhanVien.cs">
+    <Compile Include="frm_DanhMucThueSuat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DanhSchNhanVien.Designer.cs">
-      <DependentUpon>DanhSchNhanVien.cs</DependentUpon>
+    <Compile Include="frm_DanhMucThueSuat.Designer.cs">
+      <DependentUpon>frm_DanhMucThueSuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="DSHANGHOA.cs">
+    <Compile Include="frm_DanhSachKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DSHANGHOA.Designer.cs">
-      <DependentUpon>DSHANGHOA.cs</DependentUpon>
+    <Compile Include="frm_DanhSachKhachHang.Designer.cs">
+      <DependentUpon>frm_DanhSachKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_PhieuThuTien.cs">
+    <Compile Include="frm_Danhsachnhacungcap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_PhieuThuTien.Designer.cs">
-      <DependentUpon>Frm_PhieuThuTien.cs</DependentUpon>
+    <Compile Include="frm_Danhsachnhacungcap.Designer.cs">
+      <DependentUpon>frm_Danhsachnhacungcap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="frm_DanhSchNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="frm_DanhSchNhanVien.Designer.cs">
+      <DependentUpon>frm_DanhSchNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DSHANGHOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DSHANGHOA.Designer.cs">
+      <DependentUpon>frm_DSHANGHOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HinhThucThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HinhThucThanhToan.Designer.cs">
+      <DependentUpon>frm_HinhThucThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KhaiBaoKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KhaiBaoKhuVuc.Designer.cs">
+      <DependentUpon>frm_KhaiBaoKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KhaiBaoThoiDiemBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KhaiBaoThoiDiemBan.Designer.cs">
+      <DependentUpon>frm_KhaiBaoThoiDiemBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PhanNhomHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PhanNhomHangHoa.Designer.cs">
+      <DependentUpon>frm_PhanNhomHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PhanNhomKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PhanNhomKhachHang.Designer.cs">
+      <DependentUpon>frm_PhanNhomKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_PhieuChiTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PhieuChiTien.Designer.cs">
+      <DependentUpon>Frm_PhieuChiTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_trangchu.Designer.cs">
+      <DependentUpon>frm_trangchu.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_PhieuNhapKho.cs">
       <SubType>Form</SubType>
@@ -121,68 +176,38 @@
     <Compile Include="Frm_PhieuNhapKho.Designer.cs">
       <DependentUpon>Frm_PhieuNhapKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="HANGHOA.cs">
+    <Compile Include="frm_themmoihanghoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HANGHOA.Designer.cs">
-      <DependentUpon>HANGHOA.cs</DependentUpon>
+    <Compile Include="frm_themmoihanghoa.Designer.cs">
+      <DependentUpon>frm_themmoihanghoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Khaibaokho.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="frm_ThemMoiKhachHang.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Khaibaokho.Designer.cs">
-      <DependentUpon>Khaibaokho.cs</DependentUpon>
+    <Compile Include="frm_ThemMoiKhachHang.Designer.cs">
+      <DependentUpon>frm_ThemMoiKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhaiBaothoidiemban.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="frm_ThemMoiNhaCungCap.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhaiBaothoidiemban.Designer.cs">
-      <DependentUpon>KhaiBaothoidiemban.cs</DependentUpon>
+    <Compile Include="frm_ThemMoiNhaCungCap.Designer.cs">
+      <DependentUpon>frm_ThemMoiNhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhomHangHoa.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="frm_ThemMoiNhanVien.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhomHangHoa.Designer.cs">
-      <DependentUpon>NhomHangHoa.cs</DependentUpon>
+    <Compile Include="frm_ThemMoiNhanVien.Designer.cs">
+      <DependentUpon>frm_ThemMoiNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhomNhanVien.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="frm_ThongTinKho.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhomNhanVien.Designer.cs">
-      <DependentUpon>NhomNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Phannhomkhachhang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Phannhomkhachhang.Designer.cs">
-      <DependentUpon>Phannhomkhachhang.cs</DependentUpon>
+    <Compile Include="frm_ThongTinKho.Designer.cs">
+      <DependentUpon>frm_ThongTinKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Themmoikhachhang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Themmoikhachhang.Designer.cs">
-      <DependentUpon>Themmoikhachhang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Themmoinhanvien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Themmoinhanvien.Designer.cs">
-      <DependentUpon>Themmoinhanvien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Thietlapnhacungcap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Thietlapnhacungcap.Designer.cs">
-      <DependentUpon>Thietlapnhacungcap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TTKho.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TTKho.Designer.cs">
-      <DependentUpon>TTKho.cs</DependentUpon>
-    </Compile>
     <Compile Include="uc_BanHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -207,29 +232,11 @@
     <Compile Include="uc_DanhMuc.Designer.cs">
       <DependentUpon>uc_DanhMuc.cs</DependentUpon>
     </Compile>
-    <Compile Include="uc_danhmucphi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uc_danhmucphi.Designer.cs">
-      <DependentUpon>uc_danhmucphi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uc_danhmucthue.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uc_danhmucthue.Designer.cs">
-      <DependentUpon>uc_danhmucthue.cs</DependentUpon>
-    </Compile>
     <Compile Include="uc_HeThong.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="uc_HeThong.Designer.cs">
       <DependentUpon>uc_HeThong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="uc_hinhthucthanhtoan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="uc_hinhthucthanhtoan.Designer.cs">
-      <DependentUpon>uc_hinhthucthanhtoan.cs</DependentUpon>
     </Compile>
     <Compile Include="uc_KhuyenMai.cs">
       <SubType>UserControl</SubType>
@@ -261,44 +268,65 @@
     <Compile Include="uc_TonKho.Designer.cs">
       <DependentUpon>uc_TonKho.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DanhSachKhachHang.resx">
-      <DependentUpon>DanhSachKhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="frm_BoPhanNhanVien.resx">
+      <DependentUpon>frm_BoPhanNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Danhsachnhacungcap.resx">
-      <DependentUpon>Danhsachnhacungcap.cs</DependentUpon>
+    <EmbeddedResource Include="frm_DanhMucPhi.resx">
+      <DependentUpon>frm_DanhMucPhi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DanhSchNhanVien.resx">
-      <DependentUpon>DanhSchNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="frm_DanhMucThueSuat.resx">
+      <DependentUpon>frm_DanhMucThueSuat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DSHANGHOA.resx">
-      <DependentUpon>DSHANGHOA.cs</DependentUpon>
+    <EmbeddedResource Include="frm_DanhSachKhachHang.resx">
+      <DependentUpon>frm_DanhSachKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Danhsachnhacungcap.resx">
+      <DependentUpon>frm_Danhsachnhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DanhSchNhanVien.resx">
+      <DependentUpon>frm_DanhSchNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DSHANGHOA.resx">
+      <DependentUpon>frm_DSHANGHOA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_trangchu.resx">
+      <DependentUpon>frm_trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_HinhThucThanhToan.resx">
+      <DependentUpon>frm_HinhThucThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KhaiBaoKhuVuc.resx">
+      <DependentUpon>frm_KhaiBaoKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KhaiBaoThoiDiemBan.resx">
+      <DependentUpon>frm_KhaiBaoThoiDiemBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhanNhomHangHoa.resx">
+      <DependentUpon>frm_PhanNhomHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhanNhomKhachHang.resx">
+      <DependentUpon>frm_PhanNhomKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_PhieuNhapKho.resx">
       <DependentUpon>Frm_PhieuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_PhieuThuTien.resx">
-      <DependentUpon>Frm_PhieuThuTien.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_PhieuChiTien.resx">
+      <DependentUpon>Frm_PhieuChiTien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HANGHOA.resx">
-      <DependentUpon>HANGHOA.cs</DependentUpon>
+    <EmbeddedResource Include="frm_themmoihanghoa.resx">
+      <DependentUpon>frm_themmoihanghoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Khaibaokho.resx">
-      <DependentUpon>Khaibaokho.cs</DependentUpon>
+    <EmbeddedResource Include="frm_ThemMoiKhachHang.resx">
+      <DependentUpon>frm_ThemMoiKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhaiBaothoidiemban.resx">
-      <DependentUpon>KhaiBaothoidiemban.cs</DependentUpon>
+    <EmbeddedResource Include="frm_ThemMoiNhaCungCap.resx">
+      <DependentUpon>frm_ThemMoiNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhomHangHoa.resx">
-      <DependentUpon>NhomHangHoa.cs</DependentUpon>
+    <EmbeddedResource Include="frm_ThemMoiNhanVien.resx">
+      <DependentUpon>frm_ThemMoiNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhomNhanVien.resx">
-      <DependentUpon>NhomNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Phannhomkhachhang.resx">
-      <DependentUpon>Phannhomkhachhang.cs</DependentUpon>
+    <EmbeddedResource Include="frm_ThongTinKho.resx">
+      <DependentUpon>frm_ThongTinKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -310,18 +338,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Themmoikhachhang.resx">
-      <DependentUpon>Themmoikhachhang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Themmoinhanvien.resx">
-      <DependentUpon>Themmoinhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Thietlapnhacungcap.resx">
-      <DependentUpon>Thietlapnhacungcap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TTKho.resx">
-      <DependentUpon>TTKho.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="uc_BanHang.resx">
       <DependentUpon>uc_BanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,17 +350,8 @@
     <EmbeddedResource Include="uc_DanhMuc.resx">
       <DependentUpon>uc_DanhMuc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="uc_danhmucphi.resx">
-      <DependentUpon>uc_danhmucphi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uc_danhmucthue.resx">
-      <DependentUpon>uc_danhmucthue.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="uc_HeThong.resx">
       <DependentUpon>uc_HeThong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="uc_hinhthucthanhtoan.resx">
-      <DependentUpon>uc_hinhthucthanhtoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uc_KhuyenMai.resx">
       <DependentUpon>uc_KhuyenMai.cs</DependentUpon>
