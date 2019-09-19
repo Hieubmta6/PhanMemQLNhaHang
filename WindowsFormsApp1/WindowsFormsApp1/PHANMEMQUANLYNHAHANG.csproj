@@ -86,6 +86,12 @@
     <Compile Include="buttoncontrol.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="frm_BangGiaBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BangGiaBan.Designer.cs">
+      <DependentUpon>frm_BangGiaBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_BoPhanNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,12 @@
     </Compile>
     <Compile Include="frm_DanhSchNhanVien.Designer.cs">
       <DependentUpon>frm_DanhSchNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DoiMaDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DoiMaDanhMuc.Designer.cs">
+      <DependentUpon>frm_DoiMaDanhMuc.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_DSHANGHOA.cs">
       <SubType>Form</SubType>
@@ -163,6 +175,12 @@
     </Compile>
     <Compile Include="Frm_PhieuChiTien.Designer.cs">
       <DependentUpon>Frm_PhieuChiTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ThietLapBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ThietLapBan.Designer.cs">
+      <DependentUpon>frm_ThietLapBan.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_trangchu.cs">
       <SubType>Form</SubType>
@@ -268,6 +286,9 @@
     <Compile Include="uc_TonKho.Designer.cs">
       <DependentUpon>uc_TonKho.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frm_BangGiaBan.resx">
+      <DependentUpon>frm_BangGiaBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_BoPhanNhanVien.resx">
       <DependentUpon>frm_BoPhanNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,8 +307,14 @@
     <EmbeddedResource Include="frm_DanhSchNhanVien.resx">
       <DependentUpon>frm_DanhSchNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_DoiMaDanhMuc.resx">
+      <DependentUpon>frm_DoiMaDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_DSHANGHOA.resx">
       <DependentUpon>frm_DSHANGHOA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ThietLapBan.resx">
+      <DependentUpon>frm_ThietLapBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_trangchu.resx">
       <DependentUpon>frm_trangchu.cs</DependentUpon>

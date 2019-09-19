@@ -345,9 +345,9 @@
             // btn_InAn
             // 
             this.btn_InAn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_InAn.ImageOptions.Image")));
-            this.btn_InAn.Location = new System.Drawing.Point(905, 16);
+            this.btn_InAn.Location = new System.Drawing.Point(890, 16);
             this.btn_InAn.Name = "btn_InAn";
-            this.btn_InAn.Size = new System.Drawing.Size(82, 29);
+            this.btn_InAn.Size = new System.Drawing.Size(97, 29);
             this.btn_InAn.TabIndex = 10;
             this.btn_InAn.Text = "mở rộng";
             // 
