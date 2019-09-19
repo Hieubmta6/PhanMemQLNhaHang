@@ -59,6 +59,7 @@
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.btn_Dieukienloc = new DevExpress.XtraEditors.SimpleButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -76,6 +77,7 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.textBox1);
             this.panelControl2.Controls.Add(this.btn_Dong);
             this.panelControl2.Controls.Add(this.btn_Xoa);
             this.panelControl2.Controls.Add(this.btn_Them);
@@ -368,6 +370,13 @@
             this.btn_Dieukienloc.TabIndex = 0;
             this.btn_Dieukienloc.Text = "Điều kiện lọc";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(315, 25);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 17;
+            // 
             // frm_DSHANGHOA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -429,5 +438,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_InAn;
         private DevExpress.XtraEditors.SimpleButton btn_Refresh;
         private DevExpress.XtraEditors.SimpleButton btn_Export;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
