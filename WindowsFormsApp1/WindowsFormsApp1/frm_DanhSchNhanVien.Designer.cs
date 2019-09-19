@@ -94,7 +94,7 @@
             // btn_TimKiem
             // 
             this.btn_TimKiem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_TimKiem.ImageOptions.SvgImage")));
-            this.btn_TimKiem.Location = new System.Drawing.Point(953, 16);
+            this.btn_TimKiem.Location = new System.Drawing.Point(953, 5);
             this.btn_TimKiem.Name = "btn_TimKiem";
             this.btn_TimKiem.Size = new System.Drawing.Size(129, 29);
             this.btn_TimKiem.TabIndex = 6;
@@ -102,7 +102,7 @@
             // 
             // comboBoxEdit3
             // 
-            this.comboBoxEdit3.Location = new System.Drawing.Point(361, 23);
+            this.comboBoxEdit3.Location = new System.Drawing.Point(361, 12);
             this.comboBoxEdit3.Name = "comboBoxEdit3";
             this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -111,7 +111,7 @@
             // 
             // comboBoxEdit2
             // 
-            this.comboBoxEdit2.Location = new System.Drawing.Point(827, 20);
+            this.comboBoxEdit2.Location = new System.Drawing.Point(827, 9);
             this.comboBoxEdit2.Name = "comboBoxEdit2";
             this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -120,7 +120,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(732, 25);
+            this.labelControl3.Location = new System.Drawing.Point(732, 14);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(60, 17);
             this.labelControl3.TabIndex = 3;
@@ -128,7 +128,7 @@
             // 
             // comboBoxEdit1
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(575, 23);
+            this.comboBoxEdit1.Location = new System.Drawing.Point(575, 12);
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -137,7 +137,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(497, 25);
+            this.labelControl2.Location = new System.Drawing.Point(497, 14);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(52, 17);
             this.labelControl2.TabIndex = 1;
@@ -281,7 +281,7 @@
             // btn_Dieukienloc
             // 
             this.btn_Dieukienloc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Dieukienloc.ImageOptions.SvgImage")));
-            this.btn_Dieukienloc.Location = new System.Drawing.Point(10, 16);
+            this.btn_Dieukienloc.Location = new System.Drawing.Point(10, 5);
             this.btn_Dieukienloc.Name = "btn_Dieukienloc";
             this.btn_Dieukienloc.Size = new System.Drawing.Size(151, 29);
             this.btn_Dieukienloc.TabIndex = 0;
@@ -344,9 +344,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(10, 6);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(283, 36);
+            this.labelControl1.Size = new System.Drawing.Size(289, 36);
             this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Danh Sách Hàng Hóa";
+            this.labelControl1.Text = "Danh Sách Nhân Viên";
             // 
             // btn_Refresh
             // 
