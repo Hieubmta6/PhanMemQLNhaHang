@@ -92,11 +92,173 @@
     <Compile Include="frm_BangGiaBan.Designer.cs">
       <DependentUpon>frm_BangGiaBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_BangKeChungTuTheoMaPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BangKeChungTuTheoMaPhi.Designer.cs">
+      <DependentUpon>frm_BangKeChungTuTheoMaPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BangKeDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BangKeDonDatHang.Designer.cs">
+      <DependentUpon>frm_BangKeDonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BangKeHoaDonLe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BangKeHoaDonLe.Designer.cs">
+      <DependentUpon>frm_BangKeHoaDonLe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BangKeHoaDonMua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BangKeHoaDonMua.Designer.cs">
+      <DependentUpon>frm_BangKeHoaDonMua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BangKePhieuTraHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BangKePhieuTraHang.Designer.cs">
+      <DependentUpon>frm_BangKePhieuTraHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoBanHangTheoKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoBanHangTheoKhachHang.Designer.cs">
+      <DependentUpon>frm_BaoCaoBanHangTheoKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoBanHangTheoKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoBanHangTheoKhuVuc.Designer.cs">
+      <DependentUpon>frm_BaoCaoBanHangTheoKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoChiPhiTheoBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoChiPhiTheoBoPhan.Designer.cs">
+      <DependentUpon>frm_BaoCaoChiPhiTheoBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Baocaodoanhsonhomtheonam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Baocaodoanhsonhomtheonam.Designer.cs">
+      <DependentUpon>frm_Baocaodoanhsonhomtheonam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoDoanhSoNhomTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoDoanhSoNhomTheoNgay.Designer.cs">
+      <DependentUpon>frm_BaoCaoDoanhSoNhomTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoDoanhSoTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoDoanhSoTheoThang.Designer.cs">
+      <DependentUpon>frm_BaoCaoDoanhSoTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoDoanhSoTheVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoDoanhSoTheVip.Designer.cs">
+      <DependentUpon>frm_BaoCaoDoanhSoTheVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoKetQuaKinhDoanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoKetQuaKinhDoanh.Designer.cs">
+      <DependentUpon>frm_BaoCaoKetQuaKinhDoanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoMuaHangTheoNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoMuaHangTheoNhaCungCap.Designer.cs">
+      <DependentUpon>frm_BaoCaoMuaHangTheoNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoSoChiTietBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoSoChiTietBanHang.Designer.cs">
+      <DependentUpon>frm_BaoCaoSoChiTietBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoTongHopBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoTongHopBanHang.Designer.cs">
+      <DependentUpon>frm_BaoCaoTongHopBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoTongHopMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoTongHopMuaHang.Designer.cs">
+      <DependentUpon>frm_BaoCaoTongHopMuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoTongHopTraHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoTongHopTraHang.Designer.cs">
+      <DependentUpon>frm_BaoCaoTongHopTraHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaoCaoTraMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BaoCaoTraMon.Designer.cs">
+      <DependentUpon>frm_BaoCaoTraMon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_BoPhanNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_BoPhanNhanVien.Designer.cs">
       <DependentUpon>frm_BoPhanNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Chitietbanhangtheonhomhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Chitietbanhangtheonhomhang.Designer.cs">
+      <DependentUpon>frm_Chitietbanhangtheonhomhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuChoTatCaKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuChoTatCaKhachHang.Designer.cs">
+      <DependentUpon>frm_CongNoPhaiThuChoTatCaKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuCuaMotKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuCuaMotKhachHang.Designer.cs">
+      <DependentUpon>frm_CongNoPhaiThuCuaMotKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuTheoChungTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuTheoChungTu.Designer.cs">
+      <DependentUpon>frm_CongNoPhaiThuTheoChungTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuTheoNhomKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiThuTheoNhomKhachHang.Designer.cs">
+      <DependentUpon>frm_CongNoPhaiThuTheoNhomKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiTraChoMotNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiTraChoMotNhaCungCap.Designer.cs">
+      <DependentUpon>frm_CongNoPhaiTraChoMotNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiTraChoTatCaNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiTraChoTatCaNhaCungCap.Designer.cs">
+      <DependentUpon>frm_CongNoPhaiTraChoTatCaNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiTraTheoChungTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CongNoPhaiTraTheoChungTu.Designer.cs">
+      <DependentUpon>frm_CongNoPhaiTraTheoChungTu.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_DanhMucPhi.cs">
       <SubType>Form</SubType>
@@ -134,17 +296,35 @@
     <Compile Include="frm_DoiMaDanhMuc.Designer.cs">
       <DependentUpon>frm_DoiMaDanhMuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_DonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DonDatHang.Designer.cs">
+      <DependentUpon>frm_DonDatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_DSHANGHOA.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_DSHANGHOA.Designer.cs">
       <DependentUpon>frm_DSHANGHOA.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ExportChiTietBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ExportChiTietBanHang.Designer.cs">
+      <DependentUpon>frm_ExportChiTietBanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_HinhThucThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_HinhThucThanhToan.Designer.cs">
       <DependentUpon>frm_HinhThucThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HoaDonMuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HoaDonMuaHang.Designer.cs">
+      <DependentUpon>frm_HoaDonMuaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_KhaiBaoKhuVuc.cs">
       <SubType>Form</SubType>
@@ -157,6 +337,12 @@
     </Compile>
     <Compile Include="frm_KhaiBaoThoiDiemBan.Designer.cs">
       <DependentUpon>frm_KhaiBaoThoiDiemBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NhacNhoSinhNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NhacNhoSinhNhat.Designer.cs">
+      <DependentUpon>frm_NhacNhoSinhNhat.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_PhanNhomHangHoa.cs">
       <SubType>Form</SubType>
@@ -176,11 +362,47 @@
     <Compile Include="Frm_PhieuChiTien.Designer.cs">
       <DependentUpon>Frm_PhieuChiTien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_PhieuTraHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PhieuTraHang.Designer.cs">
+      <DependentUpon>frm_PhieuTraHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Sochitietmuahang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Sochitietmuahang.Designer.cs">
+      <DependentUpon>frm_Sochitietmuahang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ThietLapBan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_ThietLapBan.Designer.cs">
       <DependentUpon>frm_ThietLapBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ThietLapGiaBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ThietLapGiaBan.Designer.cs">
+      <DependentUpon>frm_ThietLapGiaBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ThietLapTienGio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ThietLapTienGio.Designer.cs">
+      <DependentUpon>frm_ThietLapTienGio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TinhHinhThucHienDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TinhHinhThucHienDonDatHang.Designer.cs">
+      <DependentUpon>frm_TinhHinhThucHienDonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TongHopNhaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TongHopNhaHang.Designer.cs">
+      <DependentUpon>frm_TongHopNhaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_trangchu.cs">
       <SubType>Form</SubType>
@@ -289,8 +511,89 @@
     <EmbeddedResource Include="frm_BangGiaBan.resx">
       <DependentUpon>frm_BangGiaBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_BangKeChungTuTheoMaPhi.resx">
+      <DependentUpon>frm_BangKeChungTuTheoMaPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BangKeDonDatHang.resx">
+      <DependentUpon>frm_BangKeDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BangKeHoaDonLe.resx">
+      <DependentUpon>frm_BangKeHoaDonLe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BangKeHoaDonMua.resx">
+      <DependentUpon>frm_BangKeHoaDonMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BangKePhieuTraHang.resx">
+      <DependentUpon>frm_BangKePhieuTraHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoBanHangTheoKhachHang.resx">
+      <DependentUpon>frm_BaoCaoBanHangTheoKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoBanHangTheoKhuVuc.resx">
+      <DependentUpon>frm_BaoCaoBanHangTheoKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoChiPhiTheoBoPhan.resx">
+      <DependentUpon>frm_BaoCaoChiPhiTheoBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Baocaodoanhsonhomtheonam.resx">
+      <DependentUpon>frm_Baocaodoanhsonhomtheonam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoDoanhSoNhomTheoNgay.resx">
+      <DependentUpon>frm_BaoCaoDoanhSoNhomTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoDoanhSoTheoThang.resx">
+      <DependentUpon>frm_BaoCaoDoanhSoTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoDoanhSoTheVip.resx">
+      <DependentUpon>frm_BaoCaoDoanhSoTheVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoKetQuaKinhDoanh.resx">
+      <DependentUpon>frm_BaoCaoKetQuaKinhDoanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoMuaHangTheoNhaCungCap.resx">
+      <DependentUpon>frm_BaoCaoMuaHangTheoNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoSoChiTietBanHang.resx">
+      <DependentUpon>frm_BaoCaoSoChiTietBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoTongHopBanHang.resx">
+      <DependentUpon>frm_BaoCaoTongHopBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoTongHopMuaHang.resx">
+      <DependentUpon>frm_BaoCaoTongHopMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoTongHopTraHang.resx">
+      <DependentUpon>frm_BaoCaoTongHopTraHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaoCaoTraMon.resx">
+      <DependentUpon>frm_BaoCaoTraMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_BoPhanNhanVien.resx">
       <DependentUpon>frm_BoPhanNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Chitietbanhangtheonhomhang.resx">
+      <DependentUpon>frm_Chitietbanhangtheonhomhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CongNoPhaiThuChoTatCaKhachHang.resx">
+      <DependentUpon>frm_CongNoPhaiThuChoTatCaKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CongNoPhaiThuCuaMotKhachHang.resx">
+      <DependentUpon>frm_CongNoPhaiThuCuaMotKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CongNoPhaiThuTheoChungTu.resx">
+      <DependentUpon>frm_CongNoPhaiThuTheoChungTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CongNoPhaiThuTheoNhomKhachHang.resx">
+      <DependentUpon>frm_CongNoPhaiThuTheoNhomKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CongNoPhaiTraChoMotNhaCungCap.resx">
+      <DependentUpon>frm_CongNoPhaiTraChoMotNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CongNoPhaiTraChoTatCaNhaCungCap.resx">
+      <DependentUpon>frm_CongNoPhaiTraChoTatCaNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CongNoPhaiTraTheoChungTu.resx">
+      <DependentUpon>frm_CongNoPhaiTraTheoChungTu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_DanhMucPhi.resx">
       <DependentUpon>frm_DanhMucPhi.cs</DependentUpon>
@@ -310,11 +613,41 @@
     <EmbeddedResource Include="frm_DoiMaDanhMuc.resx">
       <DependentUpon>frm_DoiMaDanhMuc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_DonDatHang.resx">
+      <DependentUpon>frm_DonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_DSHANGHOA.resx">
       <DependentUpon>frm_DSHANGHOA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_ExportChiTietBanHang.resx">
+      <DependentUpon>frm_ExportChiTietBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_HoaDonMuaHang.resx">
+      <DependentUpon>frm_HoaDonMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NhacNhoSinhNhat.resx">
+      <DependentUpon>frm_NhacNhoSinhNhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhieuTraHang.resx">
+      <DependentUpon>frm_PhieuTraHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Sochitietmuahang.resx">
+      <DependentUpon>frm_Sochitietmuahang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ThietLapBan.resx">
       <DependentUpon>frm_ThietLapBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ThietLapGiaBan.resx">
+      <DependentUpon>frm_ThietLapGiaBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ThietLapTienGio.resx">
+      <DependentUpon>frm_ThietLapTienGio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TinhHinhThucHienDonDatHang.resx">
+      <DependentUpon>frm_TinhHinhThucHienDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TongHopNhaHang.resx">
+      <DependentUpon>frm_TongHopNhaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_trangchu.resx">
       <DependentUpon>frm_trangchu.cs</DependentUpon>

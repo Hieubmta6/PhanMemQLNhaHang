@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frm_DSHANGHOA : DevExpress.XtraEditors.XtraForm
+    public partial class frm_HoaDonMuaHang : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        public frm_DSHANGHOA()
+        public frm_HoaDonMuaHang()
         {
             InitializeComponent();
         }
 
-        private void btn_Dong_Click(object sender, EventArgs e)
+        private void panelControl2_Paint(object sender, PaintEventArgs e)
         {
-            MessageBox.Show("Bạn có chắc muốn thoát không?",
-                "Error", MessageBoxButtons.YesNoCancel);
-            Application.Exit();
+
         }
     }
 }
