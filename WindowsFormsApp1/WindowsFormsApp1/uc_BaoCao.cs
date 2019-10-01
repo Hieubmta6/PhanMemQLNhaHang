@@ -16,5 +16,33 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btn_BCCPhiTheoBoPhan_Click(object sender, EventArgs e)
+        {
+            frm_BaoCaoChiPhiTheoBoPhan t = new frm_BaoCaoChiPhiTheoBoPhan();
+            t.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_BCKQkinhDoanh_Click(object sender, EventArgs e)
+        {
+            frm_BaoCaoKetQuaKinhDoanh k = new frm_BaoCaoKetQuaKinhDoanh();
+            k.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_BangKeChungTuTheoMaPhi_Click(object sender, EventArgs e)
+        {
+            frm_BangKeChungTuTheoMaPhi o = new frm_BangKeChungTuTheoMaPhi();
+            o.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_NhacNhoSinhNhat_Click(object sender, EventArgs e)
+        {
+            frm_NhacNhoSinhNhat n = new frm_NhacNhoSinhNhat();
+            n.ShowDialog();
+            this.Show();
+        }
     }
 }

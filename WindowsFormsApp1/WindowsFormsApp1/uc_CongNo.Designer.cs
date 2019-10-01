@@ -77,6 +77,7 @@
             this.lb_CNPTCuaMotKH.Size = new System.Drawing.Size(551, 40);
             this.lb_CNPTCuaMotKH.TabIndex = 9;
             this.lb_CNPTCuaMotKH.Text = "Công nợ phải thu của một khách hàng";
+            this.lb_CNPTCuaMotKH.Click += new System.EventHandler(this.lb_CNPTCuaMotKH_Click);
             // 
             // lb_CNPhaiThuTheoChungTu
             // 
@@ -89,6 +90,7 @@
             this.lb_CNPhaiThuTheoChungTu.Size = new System.Drawing.Size(463, 40);
             this.lb_CNPhaiThuTheoChungTu.TabIndex = 8;
             this.lb_CNPhaiThuTheoChungTu.Text = "Công nợ phải thu theo chứng từ";
+            this.lb_CNPhaiThuTheoChungTu.Click += new System.EventHandler(this.lb_CNPhaiThuTheoChungTu_Click);
             // 
             // lb_CNPhaiThuTheoNhomKH
             // 
@@ -101,6 +103,7 @@
             this.lb_CNPhaiThuTheoNhomKH.Size = new System.Drawing.Size(590, 40);
             this.lb_CNPhaiThuTheoNhomKH.TabIndex = 7;
             this.lb_CNPhaiThuTheoNhomKH.Text = "Công nợ phải thu theo nhóm khách hàng";
+            this.lb_CNPhaiThuTheoNhomKH.Click += new System.EventHandler(this.lb_CNPhaiThuTheoNhomKH_Click);
             // 
             // lb_CNPhaiThuChoTatCaKH
             // 
@@ -113,6 +116,7 @@
             this.lb_CNPhaiThuChoTatCaKH.Size = new System.Drawing.Size(606, 40);
             this.lb_CNPhaiThuChoTatCaKH.TabIndex = 6;
             this.lb_CNPhaiThuChoTatCaKH.Text = "Công nợ phải thu cho tất cả khách hàng...";
+            this.lb_CNPhaiThuChoTatCaKH.Click += new System.EventHandler(this.lb_CNPhaiThuChoTatCaKH_Click);
             // 
             // LB_CNPTraChoTCNCC
             // 
@@ -122,9 +126,10 @@
             this.LB_CNPTraChoTCNCC.Appearance.Options.UseForeColor = true;
             this.LB_CNPTraChoTCNCC.Location = new System.Drawing.Point(5, 45);
             this.LB_CNPTraChoTCNCC.Name = "LB_CNPTraChoTCNCC";
-            this.LB_CNPTraChoTCNCC.Size = new System.Drawing.Size(485, 40);
+            this.LB_CNPTraChoTCNCC.Size = new System.Drawing.Size(600, 40);
             this.LB_CNPTraChoTCNCC.TabIndex = 0;
-            this.LB_CNPTraChoTCNCC.Text = "Công nợ phải trả cho tất cho NCC";
+            this.LB_CNPTraChoTCNCC.Text = "Công nợ phải trả cho tất cả Nhà cung cấp";
+            this.LB_CNPTraChoTCNCC.Click += new System.EventHandler(this.LB_CNPTraChoTCNCC_Click);
             // 
             // lb_CNPTraCMotNCC
             // 
@@ -137,6 +142,7 @@
             this.lb_CNPTraCMotNCC.Size = new System.Drawing.Size(572, 40);
             this.lb_CNPTraCMotNCC.TabIndex = 1;
             this.lb_CNPTraCMotNCC.Text = "Công nợ phải trả cho một nhà cung cấp";
+            this.lb_CNPTraCMotNCC.Click += new System.EventHandler(this.lb_CNPTraCMotNCC_Click);
             // 
             // lb_CNPTraTheoChungTu
             // 
@@ -149,6 +155,7 @@
             this.lb_CNPTraTheoChungTu.Size = new System.Drawing.Size(456, 40);
             this.lb_CNPTraTheoChungTu.TabIndex = 2;
             this.lb_CNPTraTheoChungTu.Text = "Công nợ phải trả theo chứng từ";
+            this.lb_CNPTraTheoChungTu.Click += new System.EventHandler(this.lb_CNPTraTheoChungTu_Click);
             // 
             // groupControl3
             // 

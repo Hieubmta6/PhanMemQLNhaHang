@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_BangKeNganHang = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btn_ChiQuaNganHangGiayBaoNo = new DevExpress.XtraEditors.SimpleButton();
@@ -46,6 +47,7 @@
             this.lb_TongHopChiPhiDoanhNghiep = new DevExpress.XtraEditors.LabelControl();
             this.lb_SoQuyTienMat = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -64,6 +66,7 @@
             this.btn_BangKeNganHang.Size = new System.Drawing.Size(205, 41);
             this.btn_BangKeNganHang.TabIndex = 13;
             this.btn_BangKeNganHang.Text = "Bảng kê ngân hàng";
+            this.btn_BangKeNganHang.Click += new System.EventHandler(this.btn_BangKeNganHang_Click);
             // 
             // panelControl1
             // 
@@ -83,6 +86,7 @@
             this.btn_ChiQuaNganHangGiayBaoNo.Size = new System.Drawing.Size(236, 41);
             this.btn_ChiQuaNganHangGiayBaoNo.TabIndex = 1;
             this.btn_ChiQuaNganHangGiayBaoNo.Text = "Chi Qua ngân hàng giấy báo nợ";
+            this.btn_ChiQuaNganHangGiayBaoNo.Click += new System.EventHandler(this.btn_ChiQuaNganHangGiayBaoNo_Click);
             // 
             // groupControl1
             // 
@@ -106,6 +110,7 @@
             this.btn_PhieuChiTien.Size = new System.Drawing.Size(238, 41);
             this.btn_PhieuChiTien.TabIndex = 6;
             this.btn_PhieuChiTien.Text = "Phiếu chi Tiền";
+            this.btn_PhieuChiTien.Click += new System.EventHandler(this.btn_PhieuChiTien_Click);
             // 
             // btn_ChuyenNganQuy
             // 
@@ -116,6 +121,7 @@
             this.btn_ChuyenNganQuy.Size = new System.Drawing.Size(213, 41);
             this.btn_ChuyenNganQuy.TabIndex = 4;
             this.btn_ChuyenNganQuy.Text = "Chuyển Ngân quỹ";
+            this.btn_ChuyenNganQuy.Click += new System.EventHandler(this.btn_ChuyenNganQuy_Click);
             // 
             // btn_ThuQuaNHgiaybaoco
             // 
@@ -126,6 +132,7 @@
             this.btn_ThuQuaNHgiaybaoco.Size = new System.Drawing.Size(213, 41);
             this.btn_ThuQuaNHgiaybaoco.TabIndex = 3;
             this.btn_ThuQuaNHgiaybaoco.Text = "Thu qua ngân hàng giấy báo có ";
+            this.btn_ThuQuaNHgiaybaoco.Click += new System.EventHandler(this.btn_ThuQuaNHgiaybaoco_Click);
             // 
             // btn_PhieuThuTien
             // 
@@ -136,6 +143,7 @@
             this.btn_PhieuThuTien.Size = new System.Drawing.Size(235, 41);
             this.btn_PhieuThuTien.TabIndex = 0;
             this.btn_PhieuThuTien.Text = "Phiếu thu tiền";
+            this.btn_PhieuThuTien.Click += new System.EventHandler(this.btn_PhieuThuTien_Click);
             // 
             // btn_BangKePhieuThuTien
             // 
@@ -146,6 +154,7 @@
             this.btn_BangKePhieuThuTien.Size = new System.Drawing.Size(235, 41);
             this.btn_BangKePhieuThuTien.TabIndex = 8;
             this.btn_BangKePhieuThuTien.Text = "Bảng kê phiếu phiếu thu tiền ";
+            this.btn_BangKePhieuThuTien.Click += new System.EventHandler(this.btn_BangKePhieuThuTien_Click);
             // 
             // btn_BKCQNH
             // 
@@ -156,6 +165,7 @@
             this.btn_BKCQNH.Size = new System.Drawing.Size(236, 41);
             this.btn_BKCQNH.TabIndex = 9;
             this.btn_BKCQNH.Text = "Bảng kê Chi Qua Ngân Hàng";
+            this.btn_BKCQNH.Click += new System.EventHandler(this.btn_BKCQNH_Click);
             // 
             // btn_BangKePhieuChitien
             // 
@@ -166,6 +176,7 @@
             this.btn_BangKePhieuChitien.Size = new System.Drawing.Size(205, 41);
             this.btn_BangKePhieuChitien.TabIndex = 10;
             this.btn_BangKePhieuChitien.Text = "Bảng kê phiếu chi tiền";
+            this.btn_BangKePhieuChitien.Click += new System.EventHandler(this.btn_BangKePhieuChitien_Click);
             // 
             // btn_BangKeThuQuaNganHang
             // 
@@ -176,6 +187,7 @@
             this.btn_BangKeThuQuaNganHang.Size = new System.Drawing.Size(205, 41);
             this.btn_BangKeThuQuaNganHang.TabIndex = 11;
             this.btn_BangKeThuQuaNganHang.Text = "Bảng kê thu qua ngân hàng";
+            this.btn_BangKeThuQuaNganHang.Click += new System.EventHandler(this.btn_BangKeThuQuaNganHang_Click);
             // 
             // lb_SoQuyNH
             // 
@@ -188,6 +200,7 @@
             this.lb_SoQuyNH.Size = new System.Drawing.Size(302, 40);
             this.lb_SoQuyNH.TabIndex = 1;
             this.lb_SoQuyNH.Text = "Số QUỸ NGÂN HÀNG";
+            this.lb_SoQuyNH.Click += new System.EventHandler(this.lb_SoQuyNH_Click);
             // 
             // groupControl3
             // 
@@ -212,6 +225,7 @@
             this.lb_KhauKhaoChiPhiTSCD.Size = new System.Drawing.Size(345, 40);
             this.lb_KhauKhaoChiPhiTSCD.TabIndex = 3;
             this.lb_KhauKhaoChiPhiTSCD.Text = "Khẩu khao chi phí TSCD";
+            this.lb_KhauKhaoChiPhiTSCD.Click += new System.EventHandler(this.lb_KhauKhaoChiPhiTSCD_Click);
             // 
             // lb_TongHopChiPhiDoanhNghiep
             // 
@@ -224,6 +238,7 @@
             this.lb_TongHopChiPhiDoanhNghiep.Size = new System.Drawing.Size(456, 40);
             this.lb_TongHopChiPhiDoanhNghiep.TabIndex = 2;
             this.lb_TongHopChiPhiDoanhNghiep.Text = "Tổng Hợp Chi Phí DoanhNghiep";
+            this.lb_TongHopChiPhiDoanhNghiep.Click += new System.EventHandler(this.lb_TongHopChiPhiDoanhNghiep_Click);
             // 
             // lb_SoQuyTienMat
             // 
@@ -236,6 +251,7 @@
             this.lb_SoQuyTienMat.Size = new System.Drawing.Size(228, 40);
             this.lb_SoQuyTienMat.TabIndex = 0;
             this.lb_SoQuyTienMat.Text = "Số quỹ tiền mặt";
+            this.lb_SoQuyTienMat.Click += new System.EventHandler(this.lb_SoQuyTienMat_Click);
             // 
             // groupControl2
             // 
@@ -249,6 +265,12 @@
             this.groupControl2.Size = new System.Drawing.Size(1110, 714);
             this.groupControl2.TabIndex = 10;
             this.groupControl2.Text = "Bảng Kê";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(67, 4);
             // 
             // uc_ThuChi
             // 
@@ -292,5 +314,6 @@
         private DevExpress.XtraEditors.LabelControl lb_TongHopChiPhiDoanhNghiep;
         private DevExpress.XtraEditors.LabelControl lb_SoQuyTienMat;
         private DevExpress.XtraEditors.GroupControl groupControl2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

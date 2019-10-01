@@ -67,6 +67,7 @@
             this.lb_SoChiTietHangHoa.Size = new System.Drawing.Size(319, 40);
             this.lb_SoChiTietHangHoa.TabIndex = 3;
             this.lb_SoChiTietHangHoa.Text = "Số Chi Tiết Hàng Hóa ";
+            this.lb_SoChiTietHangHoa.Click += new System.EventHandler(this.lb_SoChiTietHangHoa_Click);
             // 
             // lb_TheKho
             // 
@@ -79,6 +80,7 @@
             this.lb_TheKho.Size = new System.Drawing.Size(119, 40);
             this.lb_TheKho.TabIndex = 2;
             this.lb_TheKho.Text = "Thẻ Kho";
+            this.lb_TheKho.Click += new System.EventHandler(this.lb_TheKho_Click);
             // 
             // lb_TongHopNhapXuatTon
             // 
@@ -88,9 +90,10 @@
             this.lb_TongHopNhapXuatTon.Appearance.Options.UseForeColor = true;
             this.lb_TongHopNhapXuatTon.Location = new System.Drawing.Point(5, 45);
             this.lb_TongHopNhapXuatTon.Name = "lb_TongHopNhapXuatTon";
-            this.lb_TongHopNhapXuatTon.Size = new System.Drawing.Size(399, 40);
+            this.lb_TongHopNhapXuatTon.Size = new System.Drawing.Size(367, 40);
             this.lb_TongHopNhapXuatTon.TabIndex = 0;
-            this.lb_TongHopNhapXuatTon.Text = "Tổng Hợp Nhật Xuất Nguồn";
+            this.lb_TongHopNhapXuatTon.Text = "Tổng Hợp Nhập Xuất Tồn";
+            this.lb_TongHopNhapXuatTon.Click += new System.EventHandler(this.lb_TongHopNhapXuatTon_Click);
             // 
             // groupControl3
             // 
@@ -115,6 +118,7 @@
             this.lb_BCTonKho.Size = new System.Drawing.Size(249, 40);
             this.lb_BCTonKho.TabIndex = 1;
             this.lb_BCTonKho.Text = "Báo Cáo Tồn Kho";
+            this.lb_BCTonKho.Click += new System.EventHandler(this.lb_BCTonKho_Click);
             // 
             // btn_PhieuNhapKho
             // 
@@ -125,6 +129,7 @@
             this.btn_PhieuNhapKho.Size = new System.Drawing.Size(235, 41);
             this.btn_PhieuNhapKho.TabIndex = 0;
             this.btn_PhieuNhapKho.Text = "Phiếu nhập kho";
+            this.btn_PhieuNhapKho.Click += new System.EventHandler(this.btn_PhieuNhapKho_Click);
             // 
             // btn_BangKePhieuNhapKho
             // 
@@ -135,6 +140,7 @@
             this.btn_BangKePhieuNhapKho.Size = new System.Drawing.Size(235, 41);
             this.btn_BangKePhieuNhapKho.TabIndex = 8;
             this.btn_BangKePhieuNhapKho.Text = "Bảng kê phiếu nhập kho ";
+            this.btn_BangKePhieuNhapKho.Click += new System.EventHandler(this.btn_BangKePhieuNhapKho_Click);
             // 
             // btn_PhieuXuatKho
             // 
@@ -145,6 +151,7 @@
             this.btn_PhieuXuatKho.Size = new System.Drawing.Size(213, 41);
             this.btn_PhieuXuatKho.TabIndex = 3;
             this.btn_PhieuXuatKho.Text = "Phiếu xuất kho";
+            this.btn_PhieuXuatKho.Click += new System.EventHandler(this.btn_PhieuXuatKho_Click);
             // 
             // btn_BKKBDinhLuong
             // 
@@ -155,6 +162,7 @@
             this.btn_BKKBDinhLuong.Size = new System.Drawing.Size(236, 41);
             this.btn_BKKBDinhLuong.TabIndex = 9;
             this.btn_BKKBDinhLuong.Text = "Bảng kê khai báo định lượng";
+            this.btn_BKKBDinhLuong.Click += new System.EventHandler(this.btn_BKKBDinhLuong_Click);
             // 
             // btn_BangKePhieuChuyenKho
             // 
@@ -165,6 +173,7 @@
             this.btn_BangKePhieuChuyenKho.Size = new System.Drawing.Size(205, 41);
             this.btn_BangKePhieuChuyenKho.TabIndex = 10;
             this.btn_BangKePhieuChuyenKho.Text = "Bảng kê phiếu chuyển kho";
+            this.btn_BangKePhieuChuyenKho.Click += new System.EventHandler(this.btn_BangKePhieuChuyenKho_Click);
             // 
             // btn_BangKePhieuXuatKho
             // 
@@ -175,6 +184,7 @@
             this.btn_BangKePhieuXuatKho.Size = new System.Drawing.Size(205, 41);
             this.btn_BangKePhieuXuatKho.TabIndex = 11;
             this.btn_BangKePhieuXuatKho.Text = "Bảng kê phiếu xuất kho";
+            this.btn_BangKePhieuXuatKho.Click += new System.EventHandler(this.btn_BangKePhieuXuatKho_Click);
             // 
             // btn_PhieuChuyenKho
             // 
@@ -185,6 +195,7 @@
             this.btn_PhieuChuyenKho.Size = new System.Drawing.Size(238, 41);
             this.btn_PhieuChuyenKho.TabIndex = 6;
             this.btn_PhieuChuyenKho.Text = "Phiếu chuyển kho";
+            this.btn_PhieuChuyenKho.Click += new System.EventHandler(this.btn_PhieuChuyenKho_Click);
             // 
             // btn_TinhDinhLuong
             // 
@@ -195,6 +206,7 @@
             this.btn_TinhDinhLuong.Size = new System.Drawing.Size(213, 41);
             this.btn_TinhDinhLuong.TabIndex = 4;
             this.btn_TinhDinhLuong.Text = "Tính Định Lượng";
+            this.btn_TinhDinhLuong.Click += new System.EventHandler(this.btn_TinhDinhLuong_Click);
             // 
             // groupControl1
             // 
@@ -218,6 +230,7 @@
             this.btn_KhaiBaoDinhLuong.Size = new System.Drawing.Size(236, 41);
             this.btn_KhaiBaoDinhLuong.TabIndex = 1;
             this.btn_KhaiBaoDinhLuong.Text = "Khai báo báo định lượng";
+            this.btn_KhaiBaoDinhLuong.Click += new System.EventHandler(this.btn_KhaiBaoDinhLuong_Click);
             // 
             // panelControl1
             // 
@@ -251,6 +264,7 @@
             this.btn_TinhGiaVon.Size = new System.Drawing.Size(205, 41);
             this.btn_TinhGiaVon.TabIndex = 13;
             this.btn_TinhGiaVon.Text = "Tính Gía Vốn";
+            this.btn_TinhGiaVon.Click += new System.EventHandler(this.btn_TinhGiaVon_Click);
             // 
             // btn_BaoCaoKiemKe
             // 

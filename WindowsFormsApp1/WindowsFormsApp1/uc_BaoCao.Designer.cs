@@ -57,6 +57,7 @@
             this.btn_NhacNhoSinhNhat.Size = new System.Drawing.Size(236, 41);
             this.btn_NhacNhoSinhNhat.TabIndex = 1;
             this.btn_NhacNhoSinhNhat.Text = "Nhắc Nhở Sinh Nhật";
+            this.btn_NhacNhoSinhNhat.Click += new System.EventHandler(this.btn_NhacNhoSinhNhat_Click);
             // 
             // groupControl1
             // 
@@ -79,6 +80,7 @@
             this.btn_BangKeChungTuTheoMaPhi.Size = new System.Drawing.Size(238, 41);
             this.btn_BangKeChungTuTheoMaPhi.TabIndex = 6;
             this.btn_BangKeChungTuTheoMaPhi.Text = "Bảng kê chứng từ theo mã phí";
+            this.btn_BangKeChungTuTheoMaPhi.Click += new System.EventHandler(this.btn_BangKeChungTuTheoMaPhi_Click);
             // 
             // btn_BCKQkinhDoanh
             // 
@@ -89,6 +91,7 @@
             this.btn_BCKQkinhDoanh.Size = new System.Drawing.Size(213, 41);
             this.btn_BCKQkinhDoanh.TabIndex = 3;
             this.btn_BCKQkinhDoanh.Text = "Báo Cáo Kết Qủa Kinh Doanh";
+            this.btn_BCKQkinhDoanh.Click += new System.EventHandler(this.btn_BCKQkinhDoanh_Click);
             // 
             // btn_BCCPhiTheoBoPhan
             // 
@@ -99,6 +102,7 @@
             this.btn_BCCPhiTheoBoPhan.Size = new System.Drawing.Size(235, 41);
             this.btn_BCCPhiTheoBoPhan.TabIndex = 0;
             this.btn_BCCPhiTheoBoPhan.Text = "Báo Cáo Chi Phí Theo Bộ Phận";
+            this.btn_BCCPhiTheoBoPhan.Click += new System.EventHandler(this.btn_BCCPhiTheoBoPhan_Click);
             // 
             // uc_BaoCao
             // 

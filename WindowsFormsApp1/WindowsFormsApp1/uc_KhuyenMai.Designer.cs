@@ -69,6 +69,7 @@
             this.btn_KhuyenMaiTheoHangHoa.Size = new System.Drawing.Size(236, 41);
             this.btn_KhuyenMaiTheoHangHoa.TabIndex = 1;
             this.btn_KhuyenMaiTheoHangHoa.Text = "Khuyễn mãi theo hàng hóa";
+            this.btn_KhuyenMaiTheoHangHoa.Click += new System.EventHandler(this.btn_KhuyenMaiTheoHangHoa_Click);
             // 
             // groupControl1
             // 
@@ -92,6 +93,7 @@
             this.btn_KhuyenMaiTheoHoaDon.Size = new System.Drawing.Size(238, 41);
             this.btn_KhuyenMaiTheoHoaDon.TabIndex = 6;
             this.btn_KhuyenMaiTheoHoaDon.Text = "Khuyến mãi theo hóa đơn";
+            this.btn_KhuyenMaiTheoHoaDon.Click += new System.EventHandler(this.btn_KhuyenMaiTheoHoaDon_Click);
             // 
             // btn_KhuyenMaiTangHang
             // 
@@ -102,6 +104,7 @@
             this.btn_KhuyenMaiTangHang.Size = new System.Drawing.Size(213, 41);
             this.btn_KhuyenMaiTangHang.TabIndex = 4;
             this.btn_KhuyenMaiTangHang.Text = "Khuyến Mãi Tặng Hàng";
+            this.btn_KhuyenMaiTangHang.Click += new System.EventHandler(this.btn_KhuyenMaiTangHang_Click);
             // 
             // btn_ChietKhau
             // 
@@ -112,6 +115,7 @@
             this.btn_ChietKhau.Size = new System.Drawing.Size(213, 41);
             this.btn_ChietKhau.TabIndex = 3;
             this.btn_ChietKhau.Text = "Chiết Khấu";
+            this.btn_ChietKhau.Click += new System.EventHandler(this.btn_ChietKhau_Click);
             // 
             // btn_TheVip
             // 
@@ -122,6 +126,7 @@
             this.btn_TheVip.Size = new System.Drawing.Size(235, 41);
             this.btn_TheVip.TabIndex = 0;
             this.btn_TheVip.Text = "Thẻ Vip";
+            this.btn_TheVip.Click += new System.EventHandler(this.btn_TheVip_Click);
             // 
             // btn_BangKeTheVip
             // 
@@ -132,6 +137,7 @@
             this.btn_BangKeTheVip.Size = new System.Drawing.Size(235, 41);
             this.btn_BangKeTheVip.TabIndex = 8;
             this.btn_BangKeTheVip.Text = "Bảng kê Vip ";
+            this.btn_BangKeTheVip.Click += new System.EventHandler(this.btn_BangKeTheVip_Click);
             // 
             // btn_DoiDiem
             // 
@@ -142,6 +148,7 @@
             this.btn_DoiDiem.Size = new System.Drawing.Size(205, 41);
             this.btn_DoiDiem.TabIndex = 10;
             this.btn_DoiDiem.Text = "Đổi Điểm";
+            this.btn_DoiDiem.Click += new System.EventHandler(this.btn_DoiDiem_Click);
             // 
             // btn_BangKeKhuyenMai
             // 
@@ -152,6 +159,7 @@
             this.btn_BangKeKhuyenMai.Size = new System.Drawing.Size(205, 41);
             this.btn_BangKeKhuyenMai.TabIndex = 11;
             this.btn_BangKeKhuyenMai.Text = "Bảng kê khuyến mãi";
+            this.btn_BangKeKhuyenMai.Click += new System.EventHandler(this.btn_BangKeKhuyenMai_Click);
             // 
             // lb_BCCTDSTheVip
             // 
@@ -164,6 +172,7 @@
             this.lb_BCCTDSTheVip.Size = new System.Drawing.Size(509, 40);
             this.lb_BCCTDSTheVip.TabIndex = 1;
             this.lb_BCCTDSTheVip.Text = "Báo Cáo Chi Tiết Doanh Số Thẻ Vip";
+            this.lb_BCCTDSTheVip.Click += new System.EventHandler(this.lb_BCCTDSTheVip_Click);
             // 
             // groupControl3
             // 
@@ -186,6 +195,7 @@
             this.lb_BCDSTheVip.Size = new System.Drawing.Size(393, 40);
             this.lb_BCDSTheVip.TabIndex = 0;
             this.lb_BCDSTheVip.Text = "Báo Cáo Doanh SỐ Thẻ Vip";
+            this.lb_BCDSTheVip.Click += new System.EventHandler(this.lb_BCDSTheVip_Click);
             // 
             // groupControl2
             // 

@@ -63,6 +63,7 @@
             this.lb_THThucHienDonDatHang.Size = new System.Drawing.Size(484, 40);
             this.lb_THThucHienDonDatHang.TabIndex = 5;
             this.lb_THThucHienDonDatHang.Text = "Tình hình thực hiện đơn đặt hàng";
+            this.lb_THThucHienDonDatHang.Click += new System.EventHandler(this.lb_THThucHienDonDatHang_Click);
             // 
             // lb_BaoCaoTongHopTraHang
             // 
@@ -75,6 +76,7 @@
             this.lb_BaoCaoTongHopTraHang.Size = new System.Drawing.Size(395, 40);
             this.lb_BaoCaoTongHopTraHang.TabIndex = 3;
             this.lb_BaoCaoTongHopTraHang.Text = "Báo cáo tổng hợp trả hàng ";
+            this.lb_BaoCaoTongHopTraHang.Click += new System.EventHandler(this.lb_BaoCaoTongHopTraHang_Click);
             // 
             // lb_SCTMH
             // 
@@ -87,6 +89,7 @@
             this.lb_SCTMH.Size = new System.Drawing.Size(308, 40);
             this.lb_SCTMH.TabIndex = 2;
             this.lb_SCTMH.Text = "Số chi tiết mua hàng ";
+            this.lb_SCTMH.Click += new System.EventHandler(this.lb_SCTMH_Click);
             // 
             // lb_BCTongHopMuaHang
             // 
@@ -99,6 +102,7 @@
             this.lb_BCTongHopMuaHang.Size = new System.Drawing.Size(426, 40);
             this.lb_BCTongHopMuaHang.TabIndex = 0;
             this.lb_BCTongHopMuaHang.Text = "Báo Cáo Tổng Hợp Mua Hàng";
+            this.lb_BCTongHopMuaHang.Click += new System.EventHandler(this.lb_BCTongHopMuaHang_Click);
             // 
             // groupControl3
             // 
@@ -124,6 +128,7 @@
             this.lb_MHTheoNhaCungCap.Size = new System.Drawing.Size(417, 40);
             this.lb_MHTheoNhaCungCap.TabIndex = 1;
             this.lb_MHTheoNhaCungCap.Text = "Mua hàng theo nhà cung cấp";
+            this.lb_MHTheoNhaCungCap.Click += new System.EventHandler(this.lb_MHTheoNhaCungCap_Click);
             // 
             // groupControl2
             // 
@@ -145,6 +150,7 @@
             this.btn_BangKeDonDatHang.Size = new System.Drawing.Size(373, 41);
             this.btn_BangKeDonDatHang.TabIndex = 8;
             this.btn_BangKeDonDatHang.Text = "Bảng kê đơn đặt hàng";
+            this.btn_BangKeDonDatHang.Click += new System.EventHandler(this.btn_BangKeDonDatHang_Click);
             // 
             // btn_BangKePhieuTraHang
             // 
@@ -155,6 +161,7 @@
             this.btn_BangKePhieuTraHang.Size = new System.Drawing.Size(330, 41);
             this.btn_BangKePhieuTraHang.TabIndex = 10;
             this.btn_BangKePhieuTraHang.Text = "Bảng kê phiếu trả hàng";
+            this.btn_BangKePhieuTraHang.Click += new System.EventHandler(this.btn_BangKePhieuTraHang_Click);
             // 
             // btn_BangKeHoaDonMua
             // 
@@ -165,6 +172,7 @@
             this.btn_BangKeHoaDonMua.Size = new System.Drawing.Size(308, 41);
             this.btn_BangKeHoaDonMua.TabIndex = 11;
             this.btn_BangKeHoaDonMua.Text = "Bảng kê hóa đơn mua";
+            this.btn_BangKeHoaDonMua.Click += new System.EventHandler(this.btn_BangKeHoaDonMua_Click);
             // 
             // btn_khaibaokhuvuc
             // 
@@ -175,6 +183,7 @@
             this.btn_khaibaokhuvuc.Size = new System.Drawing.Size(330, 41);
             this.btn_khaibaokhuvuc.TabIndex = 6;
             this.btn_khaibaokhuvuc.Text = "Phiếu trả hàng";
+            this.btn_khaibaokhuvuc.Click += new System.EventHandler(this.btn_khaibaokhuvuc_Click);
             // 
             // btn_HDMH
             // 
@@ -185,6 +194,7 @@
             this.btn_HDMH.Size = new System.Drawing.Size(308, 41);
             this.btn_HDMH.TabIndex = 3;
             this.btn_HDMH.Text = "Hóa Đơn Mua Hàng";
+            this.btn_HDMH.Click += new System.EventHandler(this.btn_HDMH_Click);
             // 
             // groupControl1
             // 
@@ -206,6 +216,7 @@
             this.btn_DonDatHang.Size = new System.Drawing.Size(373, 41);
             this.btn_DonDatHang.TabIndex = 0;
             this.btn_DonDatHang.Text = "Đơn Đặt Hàng";
+            this.btn_DonDatHang.Click += new System.EventHandler(this.btn_DonDatHang_Click);
             // 
             // panelControl1
             // 
