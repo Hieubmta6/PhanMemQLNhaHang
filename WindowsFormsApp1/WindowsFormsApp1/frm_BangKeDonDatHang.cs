@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp1
 {
     public partial class frm_BangKeDonDatHang : DevExpress.XtraEditors.XtraForm
@@ -15,6 +16,11 @@ namespace WindowsFormsApp1
         public frm_BangKeDonDatHang()
         {
             InitializeComponent();
+        }
+
+        private void btn_Dong_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

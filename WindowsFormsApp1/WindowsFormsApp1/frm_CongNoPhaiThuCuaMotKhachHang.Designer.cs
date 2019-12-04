@@ -157,6 +157,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 53);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 

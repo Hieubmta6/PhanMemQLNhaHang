@@ -21,5 +21,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btn_Dong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -52,8 +52,8 @@
             this.DVT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DonGia = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ChiPhi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
@@ -97,6 +97,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -310,15 +311,6 @@
             this.DonGia.VisibleIndex = 5;
             this.DonGia.Width = 59;
             // 
-            // thanhtien
-            // 
-            this.thanhtien.Caption = "Thành tiền";
-            this.thanhtien.MinWidth = 22;
-            this.thanhtien.Name = "thanhtien";
-            this.thanhtien.Visible = true;
-            this.thanhtien.VisibleIndex = 7;
-            this.thanhtien.Width = 56;
-            // 
             // ChiPhi
             // 
             this.ChiPhi.Caption = "Chí Phí";
@@ -327,6 +319,15 @@
             this.ChiPhi.Visible = true;
             this.ChiPhi.VisibleIndex = 6;
             this.ChiPhi.Width = 56;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.Caption = "Thành tiền";
+            this.thanhtien.MinWidth = 22;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.Visible = true;
+            this.thanhtien.VisibleIndex = 7;
+            this.thanhtien.Width = 56;
             // 
             // repositoryItemCheckEdit1
             // 

@@ -38,6 +38,7 @@
             this.Mahang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.STT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
@@ -56,7 +57,6 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -162,6 +162,15 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
             // 
+            // thanhtien
+            // 
+            this.thanhtien.Caption = "ThanhTien";
+            this.thanhtien.MinWidth = 25;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.Visible = true;
+            this.thanhtien.VisibleIndex = 7;
+            this.thanhtien.Width = 94;
+            // 
             // gridControl1
             // 
             this.gridControl1.Location = new System.Drawing.Point(-1, 133);
@@ -261,6 +270,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 47);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -337,15 +347,6 @@
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(975, 10);
             this.panelControl4.TabIndex = 81;
-            // 
-            // thanhtien
-            // 
-            this.thanhtien.Caption = "ThanhTien";
-            this.thanhtien.MinWidth = 25;
-            this.thanhtien.Name = "thanhtien";
-            this.thanhtien.Visible = true;
-            this.thanhtien.VisibleIndex = 7;
-            this.thanhtien.Width = 94;
             // 
             // frm_ExportChiTietBanHang
             // 

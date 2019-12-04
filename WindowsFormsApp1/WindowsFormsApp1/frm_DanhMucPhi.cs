@@ -17,11 +17,10 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+
         private void btn_Dong_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn có chắc muốn thoát không?",
-                "Error", MessageBoxButtons.YesNoCancel);
-            Application.Exit();
+            
         }
     }
 }

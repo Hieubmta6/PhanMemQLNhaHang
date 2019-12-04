@@ -54,14 +54,14 @@
             this.Makh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Diengiai = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Xuatexcel = new DevExpress.XtraEditors.SimpleButton();
             this.Tienhang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Chiphi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Thue = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tongtien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_Xuatexcel = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -101,6 +101,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -336,36 +337,6 @@
             this.Diengiai.VisibleIndex = 7;
             this.Diengiai.Width = 56;
             // 
-            // repositoryItemCheckEdit1
-            // 
-            this.repositoryItemCheckEdit1.AutoHeight = false;
-            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
-            // 
-            // repositoryItemCheckEdit2
-            // 
-            this.repositoryItemCheckEdit2.AutoHeight = false;
-            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
-            // 
-            // panelControl5
-            // 
-            this.panelControl5.Controls.Add(this.btn_Xuatexcel);
-            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl5.Location = new System.Drawing.Point(0, 580);
-            this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1087, 42);
-            this.panelControl5.TabIndex = 78;
-            // 
-            // btn_Xuatexcel
-            // 
-            this.btn_Xuatexcel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xuatexcel.ImageOptions.SvgImage")));
-            this.btn_Xuatexcel.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Xuatexcel.Location = new System.Drawing.Point(10, 5);
-            this.btn_Xuatexcel.Name = "btn_Xuatexcel";
-            this.btn_Xuatexcel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
-            this.btn_Xuatexcel.Size = new System.Drawing.Size(201, 29);
-            this.btn_Xuatexcel.TabIndex = 13;
-            this.btn_Xuatexcel.Text = "Xuất dữ liệu lưới ra excel";
-            // 
             // Tienhang
             // 
             this.Tienhang.Caption = "Tiền hàng";
@@ -401,6 +372,36 @@
             this.Tongtien.Visible = true;
             this.Tongtien.VisibleIndex = 11;
             this.Tongtien.Width = 94;
+            // 
+            // repositoryItemCheckEdit1
+            // 
+            this.repositoryItemCheckEdit1.AutoHeight = false;
+            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
+            // 
+            // repositoryItemCheckEdit2
+            // 
+            this.repositoryItemCheckEdit2.AutoHeight = false;
+            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            // 
+            // panelControl5
+            // 
+            this.panelControl5.Controls.Add(this.btn_Xuatexcel);
+            this.panelControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl5.Location = new System.Drawing.Point(0, 580);
+            this.panelControl5.Name = "panelControl5";
+            this.panelControl5.Size = new System.Drawing.Size(1087, 42);
+            this.panelControl5.TabIndex = 78;
+            // 
+            // btn_Xuatexcel
+            // 
+            this.btn_Xuatexcel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xuatexcel.ImageOptions.SvgImage")));
+            this.btn_Xuatexcel.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Xuatexcel.Location = new System.Drawing.Point(10, 5);
+            this.btn_Xuatexcel.Name = "btn_Xuatexcel";
+            this.btn_Xuatexcel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
+            this.btn_Xuatexcel.Size = new System.Drawing.Size(201, 29);
+            this.btn_Xuatexcel.TabIndex = 13;
+            this.btn_Xuatexcel.Text = "Xuất dữ liệu lưới ra excel";
             // 
             // frm_Sochitietmuahang
             // 

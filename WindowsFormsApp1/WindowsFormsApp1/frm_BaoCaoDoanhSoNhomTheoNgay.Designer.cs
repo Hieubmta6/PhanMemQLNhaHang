@@ -45,17 +45,17 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.STT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Ngay = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tenhang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TienThue = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.PhiPhucVu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TienCK = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.PhiPhucVu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tongtien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
@@ -66,9 +66,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -181,6 +181,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 47);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -237,30 +238,6 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
             // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(5, 115);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemCheckEdit1,
-            this.repositoryItemCheckEdit2});
-            this.gridControl1.Size = new System.Drawing.Size(969, 449);
-            this.gridControl1.TabIndex = 79;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panelControl4.Appearance.Options.UseBackColor = true;
-            this.panelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl4.Location = new System.Drawing.Point(0, 0);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(976, 10);
-            this.panelControl4.TabIndex = 76;
-            // 
             // STT
             // 
             this.STT.Caption = "STT";
@@ -299,6 +276,15 @@
             this.TienThue.VisibleIndex = 3;
             this.TienThue.Width = 82;
             // 
+            // TienCK
+            // 
+            this.TienCK.Caption = "Tiền CK";
+            this.TienCK.MinWidth = 25;
+            this.TienCK.Name = "TienCK";
+            this.TienCK.Visible = true;
+            this.TienCK.VisibleIndex = 5;
+            this.TienCK.Width = 94;
+            // 
             // PhiPhucVu
             // 
             this.PhiPhucVu.Caption = "Phí Phục Vụ";
@@ -308,23 +294,27 @@
             this.PhiPhucVu.VisibleIndex = 4;
             this.PhiPhucVu.Width = 82;
             // 
-            // TienCK
-            // 
-            this.TienCK.Caption = "Tiền CK";
-            this.TienCK.MinWidth = 25;
-            this.TienCK.Name = "TienCK";
-            this.TienCK.Visible = true;
-            this.TienCK.VisibleIndex = 9;
-            this.TienCK.Width = 94;
-            // 
             // Tongtien
             // 
             this.Tongtien.Caption = "Tổng Tiền";
             this.Tongtien.MinWidth = 25;
             this.Tongtien.Name = "Tongtien";
             this.Tongtien.Visible = true;
-            this.Tongtien.VisibleIndex = 13;
+            this.Tongtien.VisibleIndex = 6;
             this.Tongtien.Width = 94;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(5, 115);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemCheckEdit1,
+            this.repositoryItemCheckEdit2});
+            this.gridControl1.Size = new System.Drawing.Size(969, 449);
+            this.gridControl1.TabIndex = 79;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
             // repositoryItemCheckEdit1
             // 
@@ -335,6 +325,17 @@
             // 
             this.repositoryItemCheckEdit2.AutoHeight = false;
             this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelControl4.Appearance.Options.UseBackColor = true;
+            this.panelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl4.Location = new System.Drawing.Point(0, 0);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(976, 10);
+            this.panelControl4.TabIndex = 76;
             // 
             // frm_BaoCaoDoanhSoNhomTheoNgay
             // 
@@ -359,9 +360,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.ResumeLayout(false);
 
         }

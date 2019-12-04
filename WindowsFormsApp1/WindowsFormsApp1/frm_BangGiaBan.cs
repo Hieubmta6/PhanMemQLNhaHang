@@ -21,5 +21,15 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btn_Dong_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void xtraTabPage2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -116,6 +116,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(94, 29);
             this.btn_Dong.TabIndex = 13;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // panelControl2
             // 
@@ -188,7 +189,7 @@
             this.ThoiDiem.MinWidth = 25;
             this.ThoiDiem.Name = "ThoiDiem";
             this.ThoiDiem.Visible = true;
-            this.ThoiDiem.VisibleIndex = 1;
+            this.ThoiDiem.VisibleIndex = 2;
             this.ThoiDiem.Width = 94;
             // 
             // BangGia
@@ -197,7 +198,7 @@
             this.BangGia.MinWidth = 25;
             this.BangGia.Name = "BangGia";
             this.BangGia.Visible = true;
-            this.BangGia.VisibleIndex = 2;
+            this.BangGia.VisibleIndex = 3;
             this.BangGia.Width = 94;
             // 
             // frm_ThietLapGiaBan

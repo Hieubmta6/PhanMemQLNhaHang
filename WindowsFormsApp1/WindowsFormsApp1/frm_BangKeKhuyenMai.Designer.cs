@@ -186,7 +186,7 @@
             this.Ngayketthuc.MinWidth = 22;
             this.Ngayketthuc.Name = "Ngayketthuc";
             this.Ngayketthuc.Visible = true;
-            this.Ngayketthuc.VisibleIndex = 7;
+            this.Ngayketthuc.VisibleIndex = 6;
             this.Ngayketthuc.Width = 82;
             // 
             // Loaikhuyenmai
@@ -195,7 +195,7 @@
             this.Loaikhuyenmai.MinWidth = 22;
             this.Loaikhuyenmai.Name = "Loaikhuyenmai";
             this.Loaikhuyenmai.Visible = true;
-            this.Loaikhuyenmai.VisibleIndex = 6;
+            this.Loaikhuyenmai.VisibleIndex = 4;
             this.Loaikhuyenmai.Width = 82;
             // 
             // KetThuc
@@ -204,7 +204,7 @@
             this.KetThuc.MinWidth = 25;
             this.KetThuc.Name = "KetThuc";
             this.KetThuc.Visible = true;
-            this.KetThuc.VisibleIndex = 6;
+            this.KetThuc.VisibleIndex = 5;
             this.KetThuc.Width = 94;
             // 
             // ghichu
@@ -213,7 +213,7 @@
             this.ghichu.MinWidth = 25;
             this.ghichu.Name = "ghichu";
             this.ghichu.Visible = true;
-            this.ghichu.VisibleIndex = 13;
+            this.ghichu.VisibleIndex = 7;
             this.ghichu.Width = 94;
             // 
             // repositoryItemCheckEdit1
@@ -326,6 +326,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Xoa
             // 

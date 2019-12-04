@@ -43,6 +43,10 @@
             this.TENNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.KhoNhap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Tenkhonhap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Khoxuat = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.tenkhoxuat = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tongsl = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TongTien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Ghichu = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -63,10 +67,6 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.tenkhoxuat = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Khoxuat = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Tenkhonhap = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.KhoNhap = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -235,6 +235,42 @@
             this.TenKH.VisibleIndex = 7;
             this.TenKH.Width = 56;
             // 
+            // KhoNhap
+            // 
+            this.KhoNhap.Caption = "Kho Nhập";
+            this.KhoNhap.MinWidth = 25;
+            this.KhoNhap.Name = "KhoNhap";
+            this.KhoNhap.Visible = true;
+            this.KhoNhap.VisibleIndex = 8;
+            this.KhoNhap.Width = 94;
+            // 
+            // Tenkhonhap
+            // 
+            this.Tenkhonhap.Caption = "Tên kho nhập";
+            this.Tenkhonhap.MinWidth = 25;
+            this.Tenkhonhap.Name = "Tenkhonhap";
+            this.Tenkhonhap.Visible = true;
+            this.Tenkhonhap.VisibleIndex = 9;
+            this.Tenkhonhap.Width = 94;
+            // 
+            // Khoxuat
+            // 
+            this.Khoxuat.Caption = "Kho xuất";
+            this.Khoxuat.MinWidth = 25;
+            this.Khoxuat.Name = "Khoxuat";
+            this.Khoxuat.Visible = true;
+            this.Khoxuat.VisibleIndex = 10;
+            this.Khoxuat.Width = 94;
+            // 
+            // tenkhoxuat
+            // 
+            this.tenkhoxuat.Caption = "Tên Kho Xuất";
+            this.tenkhoxuat.MinWidth = 25;
+            this.tenkhoxuat.Name = "tenkhoxuat";
+            this.tenkhoxuat.Visible = true;
+            this.tenkhoxuat.VisibleIndex = 11;
+            this.tenkhoxuat.Width = 94;
+            // 
             // Tongsl
             // 
             this.Tongsl.Caption = "Tổng SL";
@@ -369,6 +405,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -417,42 +454,6 @@
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(1236, 10);
             this.panelControl4.TabIndex = 82;
-            // 
-            // tenkhoxuat
-            // 
-            this.tenkhoxuat.Caption = "Tên Kho Xuất";
-            this.tenkhoxuat.MinWidth = 25;
-            this.tenkhoxuat.Name = "tenkhoxuat";
-            this.tenkhoxuat.Visible = true;
-            this.tenkhoxuat.VisibleIndex = 11;
-            this.tenkhoxuat.Width = 94;
-            // 
-            // Khoxuat
-            // 
-            this.Khoxuat.Caption = "Kho xuất";
-            this.Khoxuat.MinWidth = 25;
-            this.Khoxuat.Name = "Khoxuat";
-            this.Khoxuat.Visible = true;
-            this.Khoxuat.VisibleIndex = 10;
-            this.Khoxuat.Width = 94;
-            // 
-            // Tenkhonhap
-            // 
-            this.Tenkhonhap.Caption = "Tên kho nhập";
-            this.Tenkhonhap.MinWidth = 25;
-            this.Tenkhonhap.Name = "Tenkhonhap";
-            this.Tenkhonhap.Visible = true;
-            this.Tenkhonhap.VisibleIndex = 9;
-            this.Tenkhonhap.Width = 94;
-            // 
-            // KhoNhap
-            // 
-            this.KhoNhap.Caption = "Kho Nhập";
-            this.KhoNhap.MinWidth = 25;
-            this.KhoNhap.Name = "KhoNhap";
-            this.KhoNhap.Visible = true;
-            this.KhoNhap.VisibleIndex = 8;
-            this.KhoNhap.Width = 94;
             // 
             // frm_BangKePhieuChuyenKho
             // 

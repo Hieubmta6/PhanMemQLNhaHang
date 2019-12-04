@@ -54,10 +54,10 @@
             this.STTHH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaThe = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenThe = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Đt = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.MaKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tenkh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Đt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NgaypJatHanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NguyenHetHan = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Mucchietkhau = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -182,6 +182,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Xoa
             // 
@@ -347,24 +348,6 @@
             this.TenThe.VisibleIndex = 2;
             this.TenThe.Width = 82;
             // 
-            // Đt
-            // 
-            this.Đt.Caption = "Đt";
-            this.Đt.MinWidth = 22;
-            this.Đt.Name = "Đt";
-            this.Đt.Visible = true;
-            this.Đt.VisibleIndex = 3;
-            this.Đt.Width = 82;
-            // 
-            // MaKH
-            // 
-            this.MaKH.Caption = "Mã KH";
-            this.MaKH.MinWidth = 22;
-            this.MaKH.Name = "MaKH";
-            this.MaKH.Visible = true;
-            this.MaKH.VisibleIndex = 7;
-            this.MaKH.Width = 82;
-            // 
             // Tenkh
             // 
             this.Tenkh.Caption = "Tên KH";
@@ -382,6 +365,24 @@
             this.DiaChi.Visible = true;
             this.DiaChi.VisibleIndex = 8;
             this.DiaChi.Width = 94;
+            // 
+            // MaKH
+            // 
+            this.MaKH.Caption = "Mã KH";
+            this.MaKH.MinWidth = 22;
+            this.MaKH.Name = "MaKH";
+            this.MaKH.Visible = true;
+            this.MaKH.VisibleIndex = 7;
+            this.MaKH.Width = 82;
+            // 
+            // Đt
+            // 
+            this.Đt.Caption = "Đt";
+            this.Đt.MinWidth = 22;
+            this.Đt.Name = "Đt";
+            this.Đt.Visible = true;
+            this.Đt.VisibleIndex = 3;
+            this.Đt.Width = 82;
             // 
             // NgaypJatHanh
             // 

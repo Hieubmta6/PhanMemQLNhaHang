@@ -34,6 +34,13 @@
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Luu = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Sua = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
@@ -81,13 +88,6 @@
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.ckb_KhoaChungTu = new DevExpress.XtraEditors.CheckEdit();
-            this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Luu = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Sua = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -175,6 +175,77 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1059, 57);
             this.panelControl1.TabIndex = 83;
+            // 
+            // btn_Dong
+            // 
+            this.btn_Dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Dong.ImageOptions.SvgImage")));
+            this.btn_Dong.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Dong.Location = new System.Drawing.Point(956, 12);
+            this.btn_Dong.Name = "btn_Dong";
+            this.btn_Dong.Size = new System.Drawing.Size(94, 29);
+            this.btn_Dong.TabIndex = 15;
+            this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Luu.ImageOptions.SvgImage")));
+            this.btn_Luu.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Luu.Location = new System.Drawing.Point(840, 12);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(94, 29);
+            this.btn_Luu.TabIndex = 14;
+            this.btn_Luu.Text = "Lưu";
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xoa.ImageOptions.SvgImage")));
+            this.btn_Xoa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Xoa.Location = new System.Drawing.Point(740, 12);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(94, 29);
+            this.btn_Xoa.TabIndex = 13;
+            this.btn_Xoa.Text = "Xóa";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Them.ImageOptions.SvgImage")));
+            this.btn_Them.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Them.Location = new System.Drawing.Point(537, 12);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(94, 29);
+            this.btn_Them.TabIndex = 12;
+            this.btn_Them.Text = "Thêm";
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Sua.ImageOptions.SvgImage")));
+            this.btn_Sua.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Sua.Location = new System.Drawing.Point(637, 12);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(94, 29);
+            this.btn_Sua.TabIndex = 11;
+            this.btn_Sua.Text = "Sửa";
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Refresh.ImageOptions.SvgImage")));
+            this.btn_Refresh.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Refresh.Location = new System.Drawing.Point(437, 12);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(94, 29);
+            this.btn_Refresh.TabIndex = 10;
+            this.btn_Refresh.Text = "Refresh";
+            // 
+            // btn_InAn
+            // 
+            this.btn_InAn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_InAn.ImageOptions.SvgImage")));
+            this.btn_InAn.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.btn_InAn.Location = new System.Drawing.Point(337, 12);
+            this.btn_InAn.Name = "btn_InAn";
+            this.btn_InAn.Size = new System.Drawing.Size(94, 29);
+            this.btn_InAn.TabIndex = 9;
+            this.btn_InAn.Text = "In ấn";
             // 
             // labelControl1
             // 
@@ -596,76 +667,6 @@
             this.ckb_KhoaChungTu.Properties.Caption = "Khóa chứng từ";
             this.ckb_KhoaChungTu.Size = new System.Drawing.Size(125, 21);
             this.ckb_KhoaChungTu.TabIndex = 0;
-            // 
-            // btn_Dong
-            // 
-            this.btn_Dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Dong.ImageOptions.SvgImage")));
-            this.btn_Dong.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Dong.Location = new System.Drawing.Point(956, 12);
-            this.btn_Dong.Name = "btn_Dong";
-            this.btn_Dong.Size = new System.Drawing.Size(94, 29);
-            this.btn_Dong.TabIndex = 15;
-            this.btn_Dong.Text = "Đóng";
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Luu.ImageOptions.SvgImage")));
-            this.btn_Luu.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Luu.Location = new System.Drawing.Point(840, 12);
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(94, 29);
-            this.btn_Luu.TabIndex = 14;
-            this.btn_Luu.Text = "Lưu";
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xoa.ImageOptions.SvgImage")));
-            this.btn_Xoa.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Xoa.Location = new System.Drawing.Point(740, 12);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(94, 29);
-            this.btn_Xoa.TabIndex = 13;
-            this.btn_Xoa.Text = "Xóa";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Them.ImageOptions.SvgImage")));
-            this.btn_Them.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Them.Location = new System.Drawing.Point(537, 12);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(94, 29);
-            this.btn_Them.TabIndex = 12;
-            this.btn_Them.Text = "Thêm";
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Sua.ImageOptions.SvgImage")));
-            this.btn_Sua.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Sua.Location = new System.Drawing.Point(637, 12);
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(94, 29);
-            this.btn_Sua.TabIndex = 11;
-            this.btn_Sua.Text = "Sửa";
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Refresh.ImageOptions.SvgImage")));
-            this.btn_Refresh.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Refresh.Location = new System.Drawing.Point(437, 12);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(94, 29);
-            this.btn_Refresh.TabIndex = 10;
-            this.btn_Refresh.Text = "Refresh";
-            // 
-            // btn_InAn
-            // 
-            this.btn_InAn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_InAn.ImageOptions.SvgImage")));
-            this.btn_InAn.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.btn_InAn.Location = new System.Drawing.Point(337, 12);
-            this.btn_InAn.Name = "btn_InAn";
-            this.btn_InAn.Size = new System.Drawing.Size(94, 29);
-            this.btn_InAn.TabIndex = 9;
-            this.btn_InAn.Text = "In ấn";
             // 
             // frm_DonDatHang
             // 

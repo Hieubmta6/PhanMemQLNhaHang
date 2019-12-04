@@ -44,7 +44,6 @@
             this.Manhom = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MayIn = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tennhomcha = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Stt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -156,12 +155,12 @@
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gridControl1.Location = new System.Drawing.Point(0, 129);
+            this.gridControl1.Location = new System.Drawing.Point(0, 256);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(847, 453);
+            this.gridControl1.Size = new System.Drawing.Size(847, 326);
             this.gridControl1.TabIndex = 32;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -172,8 +171,7 @@
             this.gridColumn1,
             this.Manhom,
             this.MayIn,
-            this.Tennhomcha,
-            this.Stt});
+            this.Tennhomcha});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -219,15 +217,6 @@
             this.Tennhomcha.VisibleIndex = 3;
             this.Tennhomcha.Width = 94;
             // 
-            // Stt
-            // 
-            this.Stt.Caption = "Stt";
-            this.Stt.MinWidth = 25;
-            this.Stt.Name = "Stt";
-            this.Stt.Visible = true;
-            this.Stt.VisibleIndex = 4;
-            this.Stt.Width = 94;
-            // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
@@ -268,6 +257,9 @@
             // 
             this.repositoryItemCheckEdit2.AutoHeight = false;
             this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            // 
+            // labelControl3
+            // 
             // 
             // frm_PhanNhomHangHoa
             // 
@@ -317,7 +309,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn Manhom;
         private DevExpress.XtraGrid.Columns.GridColumn MayIn;
         private DevExpress.XtraGrid.Columns.GridColumn Tennhomcha;
-        private DevExpress.XtraGrid.Columns.GridColumn Stt;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl2;

@@ -19,12 +19,8 @@ namespace WindowsFormsApp1
 
         private void btn_Dong_Click(object sender, EventArgs e)
         {
-            DialogResult h = MessageBox.Show("Do you wat exit program ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-            if (h == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            
+            this.Close();
+
         }
     }
 }

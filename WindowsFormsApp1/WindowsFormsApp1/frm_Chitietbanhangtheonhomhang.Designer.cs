@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Chitietbanhangtheonhomhang));
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
             this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -103,6 +103,15 @@
             this.panelControl2.Size = new System.Drawing.Size(1041, 51);
             this.panelControl2.TabIndex = 68;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.simpleButton1.Location = new System.Drawing.Point(604, 2);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(111, 40);
+            this.simpleButton1.TabIndex = 17;
+            this.simpleButton1.Text = "Mở rộng";
+            // 
             // btn_Dong
             // 
             this.btn_Dong.Dock = System.Windows.Forms.DockStyle.Right;
@@ -112,6 +121,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 47);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -148,15 +158,6 @@
             this.btn_Export.Size = new System.Drawing.Size(111, 40);
             this.btn_Export.TabIndex = 9;
             this.btn_Export.Text = "Export";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(604, 2);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(111, 40);
-            this.simpleButton1.TabIndex = 17;
-            this.simpleButton1.Text = "Mở rộng";
             // 
             // panelControl1
             // 

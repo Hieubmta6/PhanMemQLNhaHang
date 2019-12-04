@@ -51,25 +51,25 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.STTHH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Sophieu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.NgayHT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NgayLap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgayHT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaNVlap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tenkh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Dienthoai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Sohoadon = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ngayhoadon = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TienHang = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TienThue = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Thuesuat = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TienThue = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TienHang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tongtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ghichu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Xuatexcel = new DevExpress.XtraEditors.SimpleButton();
-            this.MaNVlap = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TenNV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Dienthoai = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -95,7 +95,7 @@
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl4.Location = new System.Drawing.Point(0, 0);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1022, 10);
+            this.panelControl4.Size = new System.Drawing.Size(1148, 10);
             this.panelControl4.TabIndex = 68;
             // 
             // panelControl2
@@ -111,7 +111,7 @@
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl2.Location = new System.Drawing.Point(0, 10);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1022, 57);
+            this.panelControl2.Size = new System.Drawing.Size(1148, 57);
             this.panelControl2.TabIndex = 69;
             // 
             // btn_Dong
@@ -123,6 +123,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Xoa
             // 
@@ -328,6 +329,15 @@
             this.Sophieu.VisibleIndex = 1;
             this.Sophieu.Width = 56;
             // 
+            // NgayLap
+            // 
+            this.NgayLap.Caption = "Ngày Lập";
+            this.NgayLap.MinWidth = 22;
+            this.NgayLap.Name = "NgayLap";
+            this.NgayLap.Visible = true;
+            this.NgayLap.VisibleIndex = 2;
+            this.NgayLap.Width = 56;
+            // 
             // NgayHT
             // 
             this.NgayHT.Caption = "Ngày HT";
@@ -337,14 +347,23 @@
             this.NgayHT.VisibleIndex = 3;
             this.NgayHT.Width = 56;
             // 
-            // NgayLap
+            // MaNVlap
             // 
-            this.NgayLap.Caption = "Ngày Lập";
-            this.NgayLap.MinWidth = 22;
-            this.NgayLap.Name = "NgayLap";
-            this.NgayLap.Visible = true;
-            this.NgayLap.VisibleIndex = 2;
-            this.NgayLap.Width = 56;
+            this.MaNVlap.Caption = "Mã NV lập";
+            this.MaNVlap.MinWidth = 25;
+            this.MaNVlap.Name = "MaNVlap";
+            this.MaNVlap.Visible = true;
+            this.MaNVlap.VisibleIndex = 4;
+            this.MaNVlap.Width = 77;
+            // 
+            // TenNV
+            // 
+            this.TenNV.Caption = "Tên NV";
+            this.TenNV.MinWidth = 25;
+            this.TenNV.Name = "TenNV";
+            this.TenNV.Visible = true;
+            this.TenNV.VisibleIndex = 5;
+            this.TenNV.Width = 59;
             // 
             // MaKH
             // 
@@ -373,6 +392,15 @@
             this.DiaChi.VisibleIndex = 8;
             this.DiaChi.Width = 65;
             // 
+            // Dienthoai
+            // 
+            this.Dienthoai.Caption = "Điện thoại";
+            this.Dienthoai.MinWidth = 25;
+            this.Dienthoai.Name = "Dienthoai";
+            this.Dienthoai.Visible = true;
+            this.Dienthoai.VisibleIndex = 9;
+            this.Dienthoai.Width = 70;
+            // 
             // Sohoadon
             // 
             this.Sohoadon.Caption = "Số Hóa Đơn";
@@ -391,14 +419,14 @@
             this.ngayhoadon.VisibleIndex = 11;
             this.ngayhoadon.Width = 56;
             // 
-            // TienHang
+            // Thuesuat
             // 
-            this.TienHang.Caption = "Tiền hàng";
-            this.TienHang.MinWidth = 25;
-            this.TienHang.Name = "TienHang";
-            this.TienHang.Visible = true;
-            this.TienHang.VisibleIndex = 14;
-            this.TienHang.Width = 65;
+            this.Thuesuat.Caption = "Thuế suất";
+            this.Thuesuat.MinWidth = 25;
+            this.Thuesuat.Name = "Thuesuat";
+            this.Thuesuat.Visible = true;
+            this.Thuesuat.VisibleIndex = 12;
+            this.Thuesuat.Width = 65;
             // 
             // TienThue
             // 
@@ -409,14 +437,14 @@
             this.TienThue.VisibleIndex = 13;
             this.TienThue.Width = 65;
             // 
-            // Thuesuat
+            // TienHang
             // 
-            this.Thuesuat.Caption = "Thuế suất";
-            this.Thuesuat.MinWidth = 25;
-            this.Thuesuat.Name = "Thuesuat";
-            this.Thuesuat.Visible = true;
-            this.Thuesuat.VisibleIndex = 12;
-            this.Thuesuat.Width = 65;
+            this.TienHang.Caption = "Tiền hàng";
+            this.TienHang.MinWidth = 25;
+            this.TienHang.Name = "TienHang";
+            this.TienHang.Visible = true;
+            this.TienHang.VisibleIndex = 14;
+            this.TienHang.Width = 65;
             // 
             // Tongtien
             // 
@@ -452,7 +480,7 @@
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl5.Location = new System.Drawing.Point(0, 557);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(1022, 39);
+            this.panelControl5.Size = new System.Drawing.Size(1148, 39);
             this.panelControl5.TabIndex = 73;
             // 
             // btn_Xuatexcel
@@ -466,38 +494,11 @@
             this.btn_Xuatexcel.TabIndex = 13;
             this.btn_Xuatexcel.Text = "Xuất dữ liệu lưới ra excel";
             // 
-            // MaNVlap
-            // 
-            this.MaNVlap.Caption = "Mã NV lập";
-            this.MaNVlap.MinWidth = 25;
-            this.MaNVlap.Name = "MaNVlap";
-            this.MaNVlap.Visible = true;
-            this.MaNVlap.VisibleIndex = 4;
-            this.MaNVlap.Width = 77;
-            // 
-            // TenNV
-            // 
-            this.TenNV.Caption = "Tên NV";
-            this.TenNV.MinWidth = 25;
-            this.TenNV.Name = "TenNV";
-            this.TenNV.Visible = true;
-            this.TenNV.VisibleIndex = 5;
-            this.TenNV.Width = 59;
-            // 
-            // Dienthoai
-            // 
-            this.Dienthoai.Caption = "Điện thoại";
-            this.Dienthoai.MinWidth = 25;
-            this.Dienthoai.Name = "Dienthoai";
-            this.Dienthoai.Visible = true;
-            this.Dienthoai.VisibleIndex = 9;
-            this.Dienthoai.Width = 70;
-            // 
             // frm_BangKePhieuTraHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 596);
+            this.ClientSize = new System.Drawing.Size(1148, 596);
             this.Controls.Add(this.panelControl5);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panelControl1);

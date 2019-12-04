@@ -45,6 +45,10 @@
             this.tiencoc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tiendat = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SLthuchien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TienThucHien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.slhoanthanh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.tienhoanthanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -53,10 +57,6 @@
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.btn_Dieukienloc = new DevExpress.XtraEditors.SimpleButton();
-            this.SLthuchien = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TienThucHien = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.slhoanthanh = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.tienhoanthanh = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -92,6 +92,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -239,6 +240,42 @@
             this.tiendat.VisibleIndex = 6;
             this.tiendat.Width = 56;
             // 
+            // SLthuchien
+            // 
+            this.SLthuchien.Caption = "SL thực hiện";
+            this.SLthuchien.MinWidth = 25;
+            this.SLthuchien.Name = "SLthuchien";
+            this.SLthuchien.Visible = true;
+            this.SLthuchien.VisibleIndex = 7;
+            this.SLthuchien.Width = 94;
+            // 
+            // TienThucHien
+            // 
+            this.TienThucHien.Caption = "Tiền thực hiện";
+            this.TienThucHien.MinWidth = 25;
+            this.TienThucHien.Name = "TienThucHien";
+            this.TienThucHien.Visible = true;
+            this.TienThucHien.VisibleIndex = 8;
+            this.TienThucHien.Width = 94;
+            // 
+            // slhoanthanh
+            // 
+            this.slhoanthanh.Caption = "%SL hoàn thành";
+            this.slhoanthanh.MinWidth = 25;
+            this.slhoanthanh.Name = "slhoanthanh";
+            this.slhoanthanh.Visible = true;
+            this.slhoanthanh.VisibleIndex = 9;
+            this.slhoanthanh.Width = 94;
+            // 
+            // tienhoanthanh
+            // 
+            this.tienhoanthanh.Caption = "%Tiền hoàn thành";
+            this.tienhoanthanh.MinWidth = 25;
+            this.tienhoanthanh.Name = "tienhoanthanh";
+            this.tienhoanthanh.Visible = true;
+            this.tienhoanthanh.VisibleIndex = 10;
+            this.tienhoanthanh.Width = 94;
+            // 
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.btn_TimKiem);
@@ -313,42 +350,6 @@
             this.btn_Dieukienloc.Size = new System.Drawing.Size(151, 29);
             this.btn_Dieukienloc.TabIndex = 0;
             this.btn_Dieukienloc.Text = "Điều kiện lọc";
-            // 
-            // SLthuchien
-            // 
-            this.SLthuchien.Caption = "SL thực hiện";
-            this.SLthuchien.MinWidth = 25;
-            this.SLthuchien.Name = "SLthuchien";
-            this.SLthuchien.Visible = true;
-            this.SLthuchien.VisibleIndex = 7;
-            this.SLthuchien.Width = 94;
-            // 
-            // TienThucHien
-            // 
-            this.TienThucHien.Caption = "Tiền thực hiện";
-            this.TienThucHien.MinWidth = 25;
-            this.TienThucHien.Name = "TienThucHien";
-            this.TienThucHien.Visible = true;
-            this.TienThucHien.VisibleIndex = 8;
-            this.TienThucHien.Width = 94;
-            // 
-            // slhoanthanh
-            // 
-            this.slhoanthanh.Caption = "%SL hoàn thành";
-            this.slhoanthanh.MinWidth = 25;
-            this.slhoanthanh.Name = "slhoanthanh";
-            this.slhoanthanh.Visible = true;
-            this.slhoanthanh.VisibleIndex = 9;
-            this.slhoanthanh.Width = 94;
-            // 
-            // tienhoanthanh
-            // 
-            this.tienhoanthanh.Caption = "%Tiền hoàn thành";
-            this.tienhoanthanh.MinWidth = 25;
-            this.tienhoanthanh.Name = "tienhoanthanh";
-            this.tienhoanthanh.Visible = true;
-            this.tienhoanthanh.VisibleIndex = 10;
-            this.tienhoanthanh.Width = 94;
             // 
             // frm_TinhHinhThucHienDonDatHang
             // 

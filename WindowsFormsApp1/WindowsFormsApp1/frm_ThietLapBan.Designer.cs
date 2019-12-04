@@ -36,10 +36,23 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
             this.lb_Thietlapban = new DevExpress.XtraEditors.LabelControl();
+            this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_Taotudong = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.lb_TuSo = new DevExpress.XtraEditors.LabelControl();
+            this.lb_Denso = new DevExpress.XtraEditors.LabelControl();
+            this.lb_Chieudai = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.lb_Sodokhuvuc = new DevExpress.XtraEditors.LabelControl();
+            this.btn_ThemBan = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.lb_Ban = new DevExpress.XtraEditors.LabelControl();
             this.lb_ChonDienTich = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btn_ThemKhuVuc = new DevExpress.XtraEditors.SimpleButton();
@@ -47,19 +60,6 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.btn_Xoacacbanthuockhuvuc = new DevExpress.XtraEditors.SimpleButton();
-            this.lb_Ban = new DevExpress.XtraEditors.LabelControl();
-            this.lb_Chieudai = new DevExpress.XtraEditors.LabelControl();
-            this.lb_Denso = new DevExpress.XtraEditors.LabelControl();
-            this.lb_TuSo = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.btn_Taotudong = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.btn_ThemBan = new DevExpress.XtraEditors.SimpleButton();
-            this.lb_Sodokhuvuc = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -67,17 +67,17 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -140,16 +140,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(94, 55);
             this.btn_Dong.TabIndex = 13;
             this.btn_Dong.Text = "Đóng";
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Enabled = false;
-            this.btn_Xoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xoa.ImageOptions.SvgImage")));
-            this.btn_Xoa.Location = new System.Drawing.Point(341, 50);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(94, 29);
-            this.btn_Xoa.TabIndex = 11;
-            this.btn_Xoa.Text = "Xóa";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // lb_Thietlapban
             // 
@@ -160,6 +151,16 @@
             this.lb_Thietlapban.Size = new System.Drawing.Size(162, 34);
             this.lb_Thietlapban.TabIndex = 0;
             this.lb_Thietlapban.Text = "Thiết lập bàn";
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.Enabled = false;
+            this.btn_Xoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xoa.ImageOptions.SvgImage")));
+            this.btn_Xoa.Location = new System.Drawing.Point(341, 50);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(94, 29);
+            this.btn_Xoa.TabIndex = 11;
+            this.btn_Xoa.Text = "Xóa";
             // 
             // groupControl1
             // 
@@ -179,6 +180,75 @@
             this.groupControl1.Text = "Tạo bàn tự động theo khu vực";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
+            // btn_Taotudong
+            // 
+            this.btn_Taotudong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Taotudong.ImageOptions.SvgImage")));
+            this.btn_Taotudong.Location = new System.Drawing.Point(327, 41);
+            this.btn_Taotudong.Name = "btn_Taotudong";
+            this.btn_Taotudong.Size = new System.Drawing.Size(166, 61);
+            this.btn_Taotudong.TabIndex = 36;
+            this.btn_Taotudong.Text = "Tạo tự động";
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.Location = new System.Drawing.Point(254, 80);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Size = new System.Drawing.Size(67, 22);
+            this.textEdit5.TabIndex = 35;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Location = new System.Drawing.Point(254, 44);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Size = new System.Drawing.Size(67, 22);
+            this.textEdit4.TabIndex = 34;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(103, 80);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Size = new System.Drawing.Size(67, 22);
+            this.textEdit3.TabIndex = 33;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(103, 44);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(67, 22);
+            this.textEdit2.TabIndex = 32;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(19, 47);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(45, 17);
+            this.labelControl5.TabIndex = 31;
+            this.labelControl5.Text = "Ký hiệu";
+            // 
+            // lb_TuSo
+            // 
+            this.lb_TuSo.Location = new System.Drawing.Point(205, 47);
+            this.lb_TuSo.Name = "lb_TuSo";
+            this.lb_TuSo.Size = new System.Drawing.Size(35, 17);
+            this.lb_TuSo.TabIndex = 30;
+            this.lb_TuSo.Text = "Từ số";
+            // 
+            // lb_Denso
+            // 
+            this.lb_Denso.Location = new System.Drawing.Point(205, 83);
+            this.lb_Denso.Name = "lb_Denso";
+            this.lb_Denso.Size = new System.Drawing.Size(43, 17);
+            this.lb_Denso.TabIndex = 29;
+            this.lb_Denso.Text = "Đến số";
+            // 
+            // lb_Chieudai
+            // 
+            this.lb_Chieudai.Location = new System.Drawing.Point(19, 83);
+            this.lb_Chieudai.Name = "lb_Chieudai";
+            this.lb_Chieudai.Size = new System.Drawing.Size(55, 17);
+            this.lb_Chieudai.TabIndex = 28;
+            this.lb_Chieudai.Text = "Chiều dài";
+            // 
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.lb_Sodokhuvuc);
@@ -191,6 +261,44 @@
             this.groupControl2.Size = new System.Drawing.Size(440, 126);
             this.groupControl2.TabIndex = 25;
             this.groupControl2.Text = "Tạo từng bàn";
+            // 
+            // lb_Sodokhuvuc
+            // 
+            this.lb_Sodokhuvuc.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Sodokhuvuc.Appearance.ForeColor = System.Drawing.Color.Crimson;
+            this.lb_Sodokhuvuc.Appearance.Options.UseFont = true;
+            this.lb_Sodokhuvuc.Appearance.Options.UseForeColor = true;
+            this.lb_Sodokhuvuc.Location = new System.Drawing.Point(216, 94);
+            this.lb_Sodokhuvuc.Name = "lb_Sodokhuvuc";
+            this.lb_Sodokhuvuc.Size = new System.Drawing.Size(145, 18);
+            this.lb_Sodokhuvuc.TabIndex = 39;
+            this.lb_Sodokhuvuc.Text = "-> Sơ đồ khu vực bàn";
+            // 
+            // btn_ThemBan
+            // 
+            this.btn_ThemBan.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ThemBan.ImageOptions.SvgImage")));
+            this.btn_ThemBan.Location = new System.Drawing.Point(181, 50);
+            this.btn_ThemBan.Name = "btn_ThemBan";
+            this.btn_ThemBan.Size = new System.Drawing.Size(145, 29);
+            this.btn_ThemBan.TabIndex = 38;
+            this.btn_ThemBan.Text = "Thêm bàn";
+            // 
+            // textEdit6
+            // 
+            this.textEdit6.Location = new System.Drawing.Point(49, 54);
+            this.textEdit6.Name = "textEdit6";
+            this.textEdit6.Size = new System.Drawing.Size(109, 22);
+            this.textEdit6.TabIndex = 37;
+            // 
+            // lb_Ban
+            // 
+            this.lb_Ban.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Ban.Appearance.Options.UseFont = true;
+            this.lb_Ban.Location = new System.Drawing.Point(22, 57);
+            this.lb_Ban.Name = "lb_Ban";
+            this.lb_Ban.Size = new System.Drawing.Size(25, 18);
+            this.lb_Ban.TabIndex = 27;
+            this.lb_Ban.Text = "Bàn";
             // 
             // lb_ChonDienTich
             // 
@@ -246,119 +354,12 @@
             // btn_Xoacacbanthuockhuvuc
             // 
             this.btn_Xoacacbanthuockhuvuc.Enabled = false;
-            this.btn_Xoacacbanthuockhuvuc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage2")));
+            this.btn_Xoacacbanthuockhuvuc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xoacacbanthuockhuvuc.ImageOptions.SvgImage")));
             this.btn_Xoacacbanthuockhuvuc.Location = new System.Drawing.Point(719, 99);
             this.btn_Xoacacbanthuockhuvuc.Name = "btn_Xoacacbanthuockhuvuc";
             this.btn_Xoacacbanthuockhuvuc.Size = new System.Drawing.Size(240, 29);
             this.btn_Xoacacbanthuockhuvuc.TabIndex = 31;
             this.btn_Xoacacbanthuockhuvuc.Text = "Xóa các bàn thuộc khu vực";
-            // 
-            // lb_Ban
-            // 
-            this.lb_Ban.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Ban.Appearance.Options.UseFont = true;
-            this.lb_Ban.Location = new System.Drawing.Point(22, 57);
-            this.lb_Ban.Name = "lb_Ban";
-            this.lb_Ban.Size = new System.Drawing.Size(25, 18);
-            this.lb_Ban.TabIndex = 27;
-            this.lb_Ban.Text = "Bàn";
-            // 
-            // lb_Chieudai
-            // 
-            this.lb_Chieudai.Location = new System.Drawing.Point(19, 83);
-            this.lb_Chieudai.Name = "lb_Chieudai";
-            this.lb_Chieudai.Size = new System.Drawing.Size(55, 17);
-            this.lb_Chieudai.TabIndex = 28;
-            this.lb_Chieudai.Text = "Chiều dài";
-            // 
-            // lb_Denso
-            // 
-            this.lb_Denso.Location = new System.Drawing.Point(205, 83);
-            this.lb_Denso.Name = "lb_Denso";
-            this.lb_Denso.Size = new System.Drawing.Size(43, 17);
-            this.lb_Denso.TabIndex = 29;
-            this.lb_Denso.Text = "Đến số";
-            // 
-            // lb_TuSo
-            // 
-            this.lb_TuSo.Location = new System.Drawing.Point(205, 47);
-            this.lb_TuSo.Name = "lb_TuSo";
-            this.lb_TuSo.Size = new System.Drawing.Size(35, 17);
-            this.lb_TuSo.TabIndex = 30;
-            this.lb_TuSo.Text = "Từ số";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(19, 47);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(45, 17);
-            this.labelControl5.TabIndex = 31;
-            this.labelControl5.Text = "Ký hiệu";
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(103, 44);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(67, 22);
-            this.textEdit2.TabIndex = 32;
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(103, 80);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(67, 22);
-            this.textEdit3.TabIndex = 33;
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Location = new System.Drawing.Point(254, 44);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(67, 22);
-            this.textEdit4.TabIndex = 34;
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(254, 80);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(67, 22);
-            this.textEdit5.TabIndex = 35;
-            // 
-            // btn_Taotudong
-            // 
-            this.btn_Taotudong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.btn_Taotudong.Location = new System.Drawing.Point(327, 41);
-            this.btn_Taotudong.Name = "btn_Taotudong";
-            this.btn_Taotudong.Size = new System.Drawing.Size(166, 61);
-            this.btn_Taotudong.TabIndex = 36;
-            this.btn_Taotudong.Text = "Tạo tự động";
-            // 
-            // textEdit6
-            // 
-            this.textEdit6.Location = new System.Drawing.Point(49, 54);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(109, 22);
-            this.textEdit6.TabIndex = 37;
-            // 
-            // btn_ThemBan
-            // 
-            this.btn_ThemBan.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage1")));
-            this.btn_ThemBan.Location = new System.Drawing.Point(181, 50);
-            this.btn_ThemBan.Name = "btn_ThemBan";
-            this.btn_ThemBan.Size = new System.Drawing.Size(145, 29);
-            this.btn_ThemBan.TabIndex = 38;
-            this.btn_ThemBan.Text = "Thêm bàn";
-            // 
-            // lb_Sodokhuvuc
-            // 
-            this.lb_Sodokhuvuc.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Sodokhuvuc.Appearance.ForeColor = System.Drawing.Color.Crimson;
-            this.lb_Sodokhuvuc.Appearance.Options.UseFont = true;
-            this.lb_Sodokhuvuc.Appearance.Options.UseForeColor = true;
-            this.lb_Sodokhuvuc.Location = new System.Drawing.Point(216, 94);
-            this.lb_Sodokhuvuc.Name = "lb_Sodokhuvuc";
-            this.lb_Sodokhuvuc.Size = new System.Drawing.Size(145, 18);
-            this.lb_Sodokhuvuc.TabIndex = 39;
-            this.lb_Sodokhuvuc.Text = "-> Sơ đồ khu vực bàn";
             // 
             // frm_ThietLapBan
             // 
@@ -386,18 +387,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

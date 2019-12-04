@@ -94,7 +94,17 @@ namespace WindowsFormsApp1
             uc_HeThong ht = new uc_HeThong();
             epcontrol(ht);
         }
+
+        private void frm_trangchu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult ok;
+            ok = MessageBox.Show("ban co muon thoát ko", "thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (ok == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
         //sdsdsds
-       
+
     }
 }

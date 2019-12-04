@@ -40,6 +40,7 @@
             this.NgayHT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HinhThuc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NguoiNop = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lydo = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -68,7 +69,6 @@
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Xuatexcel = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.TenKH = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -205,6 +205,15 @@
             this.MaKH.Visible = true;
             this.MaKH.VisibleIndex = 5;
             this.MaKH.Width = 82;
+            // 
+            // TenKH
+            // 
+            this.TenKH.Caption = "TenKH";
+            this.TenKH.MinWidth = 25;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.Visible = true;
+            this.TenKH.VisibleIndex = 6;
+            this.TenKH.Width = 94;
             // 
             // DiaChi
             // 
@@ -370,6 +379,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Xoa
             // 
@@ -470,15 +480,6 @@
             this.simpleButton1.Size = new System.Drawing.Size(201, 29);
             this.simpleButton1.TabIndex = 76;
             this.simpleButton1.Text = "Xuất dữ liệu lưới ra excel";
-            // 
-            // TenKH
-            // 
-            this.TenKH.Caption = "TenKH";
-            this.TenKH.MinWidth = 25;
-            this.TenKH.Name = "TenKH";
-            this.TenKH.Visible = true;
-            this.TenKH.VisibleIndex = 6;
-            this.TenKH.Width = 94;
             // 
             // frm_BangKePhieuThuTien
             // 

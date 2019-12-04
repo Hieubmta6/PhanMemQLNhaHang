@@ -34,8 +34,8 @@
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.comboBoxEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -95,16 +95,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(94, 29);
             this.btn_Dong.TabIndex = 8;
             this.btn_Dong.Text = "Đóng";
-            // 
-            // btn_Export
-            // 
-            this.btn_Export.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Export.ImageOptions.SvgImage")));
-            this.btn_Export.Location = new System.Drawing.Point(320, 254);
-            this.btn_Export.Name = "btn_Export";
-            this.btn_Export.Size = new System.Drawing.Size(94, 40);
-            this.btn_Export.TabIndex = 1;
-            this.btn_Export.Text = "Tính";
-            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // labelControl1
             // 
@@ -115,6 +106,16 @@
             this.labelControl1.Size = new System.Drawing.Size(229, 40);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Tính định lượng";
+            // 
+            // btn_Export
+            // 
+            this.btn_Export.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Export.ImageOptions.SvgImage")));
+            this.btn_Export.Location = new System.Drawing.Point(320, 254);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(94, 40);
+            this.btn_Export.TabIndex = 1;
+            this.btn_Export.Text = "Tính";
+            this.btn_Export.Click += new System.EventHandler(this.btn_Export_Click);
             // 
             // panelControl4
             // 

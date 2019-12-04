@@ -39,6 +39,12 @@
             this.MaHang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tenhang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ĐVT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SLton = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GtriTon = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SLKIEMKHO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SLCHENHLECH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.kiemke = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemCheckEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -56,16 +62,11 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.SLton = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GtriTon = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.SLKIEMKHO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.SLCHENHLECH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.kiemke = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemCheckEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -77,7 +78,6 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit3)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -190,6 +190,57 @@
             this.ĐVT.VisibleIndex = 3;
             this.ĐVT.Width = 56;
             // 
+            // SLton
+            // 
+            this.SLton.Caption = "SL Tồn";
+            this.SLton.MinWidth = 25;
+            this.SLton.Name = "SLton";
+            this.SLton.Visible = true;
+            this.SLton.VisibleIndex = 4;
+            this.SLton.Width = 94;
+            // 
+            // GtriTon
+            // 
+            this.GtriTon.Caption = "Gía trị tồn";
+            this.GtriTon.MinWidth = 25;
+            this.GtriTon.Name = "GtriTon";
+            this.GtriTon.Visible = true;
+            this.GtriTon.VisibleIndex = 5;
+            this.GtriTon.Width = 94;
+            // 
+            // SLKIEMKHO
+            // 
+            this.SLKIEMKHO.Caption = "SL KIỂM KHO";
+            this.SLKIEMKHO.MinWidth = 25;
+            this.SLKIEMKHO.Name = "SLKIEMKHO";
+            this.SLKIEMKHO.Visible = true;
+            this.SLKIEMKHO.VisibleIndex = 6;
+            this.SLKIEMKHO.Width = 94;
+            // 
+            // SLCHENHLECH
+            // 
+            this.SLCHENHLECH.Caption = "SL Chênh Lệch";
+            this.SLCHENHLECH.MinWidth = 25;
+            this.SLCHENHLECH.Name = "SLCHENHLECH";
+            this.SLCHENHLECH.Visible = true;
+            this.SLCHENHLECH.VisibleIndex = 7;
+            this.SLCHENHLECH.Width = 94;
+            // 
+            // kiemke
+            // 
+            this.kiemke.Caption = "Kiểm KÊ";
+            this.kiemke.ColumnEdit = this.repositoryItemCheckEdit3;
+            this.kiemke.MinWidth = 25;
+            this.kiemke.Name = "kiemke";
+            this.kiemke.Visible = true;
+            this.kiemke.VisibleIndex = 8;
+            this.kiemke.Width = 94;
+            // 
+            // repositoryItemCheckEdit3
+            // 
+            this.repositoryItemCheckEdit3.AutoHeight = false;
+            this.repositoryItemCheckEdit3.Name = "repositoryItemCheckEdit3";
+            // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
@@ -297,6 +348,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -346,57 +398,6 @@
             this.panelControl4.Size = new System.Drawing.Size(1083, 10);
             this.panelControl4.TabIndex = 87;
             // 
-            // SLton
-            // 
-            this.SLton.Caption = "SL Tồn";
-            this.SLton.MinWidth = 25;
-            this.SLton.Name = "SLton";
-            this.SLton.Visible = true;
-            this.SLton.VisibleIndex = 4;
-            this.SLton.Width = 94;
-            // 
-            // GtriTon
-            // 
-            this.GtriTon.Caption = "Gía trị tồn";
-            this.GtriTon.MinWidth = 25;
-            this.GtriTon.Name = "GtriTon";
-            this.GtriTon.Visible = true;
-            this.GtriTon.VisibleIndex = 5;
-            this.GtriTon.Width = 94;
-            // 
-            // SLKIEMKHO
-            // 
-            this.SLKIEMKHO.Caption = "SL KIỂM KHO";
-            this.SLKIEMKHO.MinWidth = 25;
-            this.SLKIEMKHO.Name = "SLKIEMKHO";
-            this.SLKIEMKHO.Visible = true;
-            this.SLKIEMKHO.VisibleIndex = 6;
-            this.SLKIEMKHO.Width = 94;
-            // 
-            // SLCHENHLECH
-            // 
-            this.SLCHENHLECH.Caption = "SL Chênh Lệch";
-            this.SLCHENHLECH.MinWidth = 25;
-            this.SLCHENHLECH.Name = "SLCHENHLECH";
-            this.SLCHENHLECH.Visible = true;
-            this.SLCHENHLECH.VisibleIndex = 7;
-            this.SLCHENHLECH.Width = 94;
-            // 
-            // kiemke
-            // 
-            this.kiemke.Caption = "Kiểm KÊ";
-            this.kiemke.ColumnEdit = this.repositoryItemCheckEdit3;
-            this.kiemke.MinWidth = 25;
-            this.kiemke.Name = "kiemke";
-            this.kiemke.Visible = true;
-            this.kiemke.VisibleIndex = 8;
-            this.kiemke.Width = 94;
-            // 
-            // repositoryItemCheckEdit3
-            // 
-            this.repositoryItemCheckEdit3.AutoHeight = false;
-            this.repositoryItemCheckEdit3.Name = "repositoryItemCheckEdit3";
-            // 
             // frm_BaoCaoTonKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -413,6 +414,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -426,7 +428,6 @@
             this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit3)).EndInit();
             this.ResumeLayout(false);
 
         }

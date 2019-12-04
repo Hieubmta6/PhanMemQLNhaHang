@@ -42,6 +42,9 @@
             this.TENNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Tongsl = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TongTien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Ghichu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -61,9 +64,6 @@
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Xuatexcel = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.Tongsl = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TongTien = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Ghichu = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -217,6 +217,33 @@
             this.TenKH.VisibleIndex = 7;
             this.TenKH.Width = 56;
             // 
+            // Tongsl
+            // 
+            this.Tongsl.Caption = "Tổng SL";
+            this.Tongsl.MinWidth = 25;
+            this.Tongsl.Name = "Tongsl";
+            this.Tongsl.Visible = true;
+            this.Tongsl.VisibleIndex = 8;
+            this.Tongsl.Width = 94;
+            // 
+            // TongTien
+            // 
+            this.TongTien.Caption = "Tổng Tiền";
+            this.TongTien.MinWidth = 25;
+            this.TongTien.Name = "TongTien";
+            this.TongTien.Visible = true;
+            this.TongTien.VisibleIndex = 9;
+            this.TongTien.Width = 94;
+            // 
+            // Ghichu
+            // 
+            this.Ghichu.Caption = "Ghi Chú";
+            this.Ghichu.MinWidth = 25;
+            this.Ghichu.Name = "Ghichu";
+            this.Ghichu.Visible = true;
+            this.Ghichu.VisibleIndex = 10;
+            this.Ghichu.Width = 94;
+            // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
@@ -324,6 +351,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -394,33 +422,6 @@
             this.simpleButton1.Size = new System.Drawing.Size(201, 29);
             this.simpleButton1.TabIndex = 81;
             this.simpleButton1.Text = "Xuất dữ liệu lưới ra excel";
-            // 
-            // Tongsl
-            // 
-            this.Tongsl.Caption = "Tổng SL";
-            this.Tongsl.MinWidth = 25;
-            this.Tongsl.Name = "Tongsl";
-            this.Tongsl.Visible = true;
-            this.Tongsl.VisibleIndex = 8;
-            this.Tongsl.Width = 94;
-            // 
-            // TongTien
-            // 
-            this.TongTien.Caption = "Tổng Tiền";
-            this.TongTien.MinWidth = 25;
-            this.TongTien.Name = "TongTien";
-            this.TongTien.Visible = true;
-            this.TongTien.VisibleIndex = 9;
-            this.TongTien.Width = 94;
-            // 
-            // Ghichu
-            // 
-            this.Ghichu.Caption = "Ghi Chú";
-            this.Ghichu.MinWidth = 25;
-            this.Ghichu.Name = "Ghichu";
-            this.Ghichu.Visible = true;
-            this.Ghichu.VisibleIndex = 10;
-            this.Ghichu.Width = 94;
             // 
             // frm_BangKePhieuNhapKho
             // 

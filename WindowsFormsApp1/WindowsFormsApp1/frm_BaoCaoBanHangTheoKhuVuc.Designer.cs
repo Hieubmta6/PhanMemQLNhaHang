@@ -37,16 +37,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.btn_Dieukienloc = new DevExpress.XtraEditors.SimpleButton();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.STTHH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaHang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tenhang = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -61,21 +51,31 @@
             this.TienCKban = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ThueVAT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tongtien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_TimKiem
@@ -166,114 +166,6 @@
             this.gridView1.OptionsView.EnableAppearanceEvenRow = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 111);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemCheckEdit1,
-            this.repositoryItemCheckEdit2});
-            this.gridControl1.Size = new System.Drawing.Size(1016, 317);
-            this.gridControl1.TabIndex = 75;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.btn_TimKiem);
-            this.panelControl1.Controls.Add(this.comboBoxEdit3);
-            this.panelControl1.Controls.Add(this.comboBoxEdit2);
-            this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Controls.Add(this.comboBoxEdit1);
-            this.panelControl1.Controls.Add(this.labelControl2);
-            this.panelControl1.Controls.Add(this.btn_Dieukienloc);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl1.Location = new System.Drawing.Point(0, 61);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1044, 50);
-            this.panelControl1.TabIndex = 74;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(604, 2);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(111, 40);
-            this.simpleButton1.TabIndex = 17;
-            this.simpleButton1.Text = "Mở rộng";
-            // 
-            // btn_Dong
-            // 
-            this.btn_Dong.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Dong.ImageOptions.SvgImage")));
-            this.btn_Dong.Location = new System.Drawing.Point(851, 2);
-            this.btn_Dong.Name = "btn_Dong";
-            this.btn_Dong.Size = new System.Drawing.Size(82, 47);
-            this.btn_Dong.TabIndex = 16;
-            this.btn_Dong.Text = "Đóng";
-            // 
-            // btn_InAn
-            // 
-            this.btn_InAn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_InAn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_InAn.ImageOptions.Image")));
-            this.btn_InAn.Location = new System.Drawing.Point(933, 2);
-            this.btn_InAn.Name = "btn_InAn";
-            this.btn_InAn.Size = new System.Drawing.Size(109, 47);
-            this.btn_InAn.TabIndex = 10;
-            this.btn_InAn.Text = "mở rộng";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(5, 11);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(422, 36);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Báo cáo bán hàng theo khu vực";
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.Location = new System.Drawing.Point(97, 0);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(7, 14);
-            this.panelControl3.TabIndex = 0;
-            // 
-            // btn_Export
-            // 
-            this.btn_Export.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Export.ImageOptions.SvgImage")));
-            this.btn_Export.Location = new System.Drawing.Point(721, 5);
-            this.btn_Export.Name = "btn_Export";
-            this.btn_Export.Size = new System.Drawing.Size(111, 40);
-            this.btn_Export.TabIndex = 9;
-            this.btn_Export.Text = "Export";
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Controls.Add(this.simpleButton1);
-            this.panelControl2.Controls.Add(this.btn_Dong);
-            this.panelControl2.Controls.Add(this.btn_InAn);
-            this.panelControl2.Controls.Add(this.labelControl1);
-            this.panelControl2.Controls.Add(this.panelControl3);
-            this.panelControl2.Controls.Add(this.btn_Export);
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 10);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1044, 51);
-            this.panelControl2.TabIndex = 73;
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panelControl4.Appearance.Options.UseBackColor = true;
-            this.panelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl4.Location = new System.Drawing.Point(0, 0);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1044, 10);
-            this.panelControl4.TabIndex = 72;
             // 
             // STTHH
             // 
@@ -403,6 +295,19 @@
             this.Tongtien.VisibleIndex = 13;
             this.Tongtien.Width = 94;
             // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(0, 111);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemCheckEdit1,
+            this.repositoryItemCheckEdit2});
+            this.gridControl1.Size = new System.Drawing.Size(1016, 317);
+            this.gridControl1.TabIndex = 75;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
@@ -412,6 +317,102 @@
             // 
             this.repositoryItemCheckEdit2.AutoHeight = false;
             this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.btn_TimKiem);
+            this.panelControl1.Controls.Add(this.comboBoxEdit3);
+            this.panelControl1.Controls.Add(this.comboBoxEdit2);
+            this.panelControl1.Controls.Add(this.labelControl3);
+            this.panelControl1.Controls.Add(this.comboBoxEdit1);
+            this.panelControl1.Controls.Add(this.labelControl2);
+            this.panelControl1.Controls.Add(this.btn_Dieukienloc);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 61);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(1044, 50);
+            this.panelControl1.TabIndex = 74;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.simpleButton1.Location = new System.Drawing.Point(604, 2);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(111, 40);
+            this.simpleButton1.TabIndex = 17;
+            this.simpleButton1.Text = "Mở rộng";
+            // 
+            // btn_Dong
+            // 
+            this.btn_Dong.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_Dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Dong.ImageOptions.SvgImage")));
+            this.btn_Dong.Location = new System.Drawing.Point(851, 2);
+            this.btn_Dong.Name = "btn_Dong";
+            this.btn_Dong.Size = new System.Drawing.Size(82, 47);
+            this.btn_Dong.TabIndex = 16;
+            this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
+            // 
+            // btn_InAn
+            // 
+            this.btn_InAn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_InAn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_InAn.ImageOptions.Image")));
+            this.btn_InAn.Location = new System.Drawing.Point(933, 2);
+            this.btn_InAn.Name = "btn_InAn";
+            this.btn_InAn.Size = new System.Drawing.Size(109, 47);
+            this.btn_InAn.TabIndex = 10;
+            this.btn_InAn.Text = "mở rộng";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(5, 11);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(422, 36);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Báo cáo bán hàng theo khu vực";
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Location = new System.Drawing.Point(97, 0);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(7, 14);
+            this.panelControl3.TabIndex = 0;
+            // 
+            // btn_Export
+            // 
+            this.btn_Export.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Export.ImageOptions.SvgImage")));
+            this.btn_Export.Location = new System.Drawing.Point(721, 5);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(111, 40);
+            this.btn_Export.TabIndex = 9;
+            this.btn_Export.Text = "Export";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.simpleButton1);
+            this.panelControl2.Controls.Add(this.btn_Dong);
+            this.panelControl2.Controls.Add(this.btn_InAn);
+            this.panelControl2.Controls.Add(this.labelControl1);
+            this.panelControl2.Controls.Add(this.panelControl3);
+            this.panelControl2.Controls.Add(this.btn_Export);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl2.Location = new System.Drawing.Point(0, 10);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(1044, 51);
+            this.panelControl2.TabIndex = 73;
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panelControl4.Appearance.Options.UseBackColor = true;
+            this.panelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl4.Location = new System.Drawing.Point(0, 0);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(1044, 10);
+            this.panelControl4.TabIndex = 72;
             // 
             // frm_BaoCaoBanHangTheoKhuVuc
             // 
@@ -429,6 +430,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -437,8 +440,6 @@
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             this.ResumeLayout(false);
 
         }

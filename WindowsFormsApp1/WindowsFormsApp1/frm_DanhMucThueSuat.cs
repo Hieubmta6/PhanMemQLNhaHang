@@ -24,9 +24,7 @@ namespace WindowsFormsApp1
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn có chắc muốn thoát không?",
-                "Error", MessageBoxButtons.YesNoCancel);
-            Application.Exit();
+            this.Close();
         }
     }
 }

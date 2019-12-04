@@ -39,6 +39,11 @@
             this.NgayChungtu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.sochungtu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Tenkh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DIENGIAI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SLnhap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.slxuat = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.soluongton = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -56,11 +61,6 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Export = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.Tenkh = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.DIENGIAI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.SLnhap = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.slxuat = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.soluongton = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -187,6 +187,51 @@
             this.MaKH.VisibleIndex = 3;
             this.MaKH.Width = 56;
             // 
+            // Tenkh
+            // 
+            this.Tenkh.Caption = "Tên KH";
+            this.Tenkh.MinWidth = 25;
+            this.Tenkh.Name = "Tenkh";
+            this.Tenkh.Visible = true;
+            this.Tenkh.VisibleIndex = 4;
+            this.Tenkh.Width = 94;
+            // 
+            // DIENGIAI
+            // 
+            this.DIENGIAI.Caption = "Diễn giải";
+            this.DIENGIAI.MinWidth = 25;
+            this.DIENGIAI.Name = "DIENGIAI";
+            this.DIENGIAI.Visible = true;
+            this.DIENGIAI.VisibleIndex = 5;
+            this.DIENGIAI.Width = 94;
+            // 
+            // SLnhap
+            // 
+            this.SLnhap.Caption = "SL nhập";
+            this.SLnhap.MinWidth = 25;
+            this.SLnhap.Name = "SLnhap";
+            this.SLnhap.Visible = true;
+            this.SLnhap.VisibleIndex = 6;
+            this.SLnhap.Width = 94;
+            // 
+            // slxuat
+            // 
+            this.slxuat.Caption = "số lượng xuất";
+            this.slxuat.MinWidth = 25;
+            this.slxuat.Name = "slxuat";
+            this.slxuat.Visible = true;
+            this.slxuat.VisibleIndex = 7;
+            this.slxuat.Width = 94;
+            // 
+            // soluongton
+            // 
+            this.soluongton.Caption = "Số lượng tồn";
+            this.soluongton.MinWidth = 25;
+            this.soluongton.Name = "soluongton";
+            this.soluongton.Visible = true;
+            this.soluongton.VisibleIndex = 8;
+            this.soluongton.Width = 94;
+            // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
@@ -294,6 +339,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -342,51 +388,6 @@
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(1120, 10);
             this.panelControl4.TabIndex = 87;
-            // 
-            // Tenkh
-            // 
-            this.Tenkh.Caption = "Tên KH";
-            this.Tenkh.MinWidth = 25;
-            this.Tenkh.Name = "Tenkh";
-            this.Tenkh.Visible = true;
-            this.Tenkh.VisibleIndex = 4;
-            this.Tenkh.Width = 94;
-            // 
-            // DIENGIAI
-            // 
-            this.DIENGIAI.Caption = "Diễn giải";
-            this.DIENGIAI.MinWidth = 25;
-            this.DIENGIAI.Name = "DIENGIAI";
-            this.DIENGIAI.Visible = true;
-            this.DIENGIAI.VisibleIndex = 5;
-            this.DIENGIAI.Width = 94;
-            // 
-            // SLnhap
-            // 
-            this.SLnhap.Caption = "SL nhập";
-            this.SLnhap.MinWidth = 25;
-            this.SLnhap.Name = "SLnhap";
-            this.SLnhap.Visible = true;
-            this.SLnhap.VisibleIndex = 6;
-            this.SLnhap.Width = 94;
-            // 
-            // slxuat
-            // 
-            this.slxuat.Caption = "số lượng xuất";
-            this.slxuat.MinWidth = 25;
-            this.slxuat.Name = "slxuat";
-            this.slxuat.Visible = true;
-            this.slxuat.VisibleIndex = 7;
-            this.slxuat.Width = 94;
-            // 
-            // soluongton
-            // 
-            this.soluongton.Caption = "Số lượng tồn";
-            this.soluongton.MinWidth = 25;
-            this.soluongton.Name = "soluongton";
-            this.soluongton.Visible = true;
-            this.soluongton.VisibleIndex = 8;
-            this.soluongton.Width = 94;
             // 
             // frm_TheKho
             // 

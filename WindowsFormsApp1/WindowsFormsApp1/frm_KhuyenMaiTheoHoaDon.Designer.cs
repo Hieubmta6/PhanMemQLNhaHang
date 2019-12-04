@@ -35,8 +35,9 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.STT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.CK = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TuGiaTri = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dencangiatri = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CK = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TienCK = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -46,13 +47,13 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.ckb_KetThuc = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.cbo_NgayLap = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txb_LC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.ckb_KetThuc = new DevExpress.XtraEditors.CheckEdit();
             this.comboBoxEdit6 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
@@ -61,7 +62,6 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.dencangiatri = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -71,12 +71,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ckb_KetThuc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayLap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_LC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ckb_KetThuc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_ĐT.Properties)).BeginInit();
@@ -144,15 +144,6 @@
             this.STT.VisibleIndex = 0;
             this.STT.Width = 94;
             // 
-            // CK
-            // 
-            this.CK.Caption = "% CK";
-            this.CK.MinWidth = 25;
-            this.CK.Name = "CK";
-            this.CK.Visible = true;
-            this.CK.VisibleIndex = 3;
-            this.CK.Width = 94;
-            // 
             // TuGiaTri
             // 
             this.TuGiaTri.Caption = "Từ Giá trị";
@@ -161,6 +152,24 @@
             this.TuGiaTri.Visible = true;
             this.TuGiaTri.VisibleIndex = 1;
             this.TuGiaTri.Width = 94;
+            // 
+            // dencangiatri
+            // 
+            this.dencangiatri.Caption = "Đến cận giá trị";
+            this.dencangiatri.MinWidth = 25;
+            this.dencangiatri.Name = "dencangiatri";
+            this.dencangiatri.Visible = true;
+            this.dencangiatri.VisibleIndex = 2;
+            this.dencangiatri.Width = 94;
+            // 
+            // CK
+            // 
+            this.CK.Caption = "% CK";
+            this.CK.MinWidth = 25;
+            this.CK.Name = "CK";
+            this.CK.Visible = true;
+            this.CK.VisibleIndex = 3;
+            this.CK.Width = 94;
             // 
             // TienCK
             // 
@@ -201,6 +210,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(94, 29);
             this.btn_Dong.TabIndex = 8;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Luu
             // 
@@ -256,6 +266,14 @@
             this.panelControl5.Size = new System.Drawing.Size(498, 112);
             this.panelControl5.TabIndex = 100;
             // 
+            // ckb_KetThuc
+            // 
+            this.ckb_KetThuc.Location = new System.Drawing.Point(103, 75);
+            this.ckb_KetThuc.Name = "ckb_KetThuc";
+            this.ckb_KetThuc.Properties.Caption = "Kết thúc";
+            this.ckb_KetThuc.Size = new System.Drawing.Size(94, 21);
+            this.ckb_KetThuc.TabIndex = 30;
+            // 
             // textEdit8
             // 
             this.textEdit8.Location = new System.Drawing.Point(103, 39);
@@ -309,14 +327,6 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(557, 117);
             this.panelControl2.TabIndex = 99;
-            // 
-            // ckb_KetThuc
-            // 
-            this.ckb_KetThuc.Location = new System.Drawing.Point(103, 75);
-            this.ckb_KetThuc.Name = "ckb_KetThuc";
-            this.ckb_KetThuc.Properties.Caption = "Kết thúc";
-            this.ckb_KetThuc.Size = new System.Drawing.Size(94, 21);
-            this.ckb_KetThuc.TabIndex = 30;
             // 
             // comboBoxEdit6
             // 
@@ -382,15 +392,6 @@
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "Mã K.Mãi";
             // 
-            // dencangiatri
-            // 
-            this.dencangiatri.Caption = "Đến cận giá trị";
-            this.dencangiatri.MinWidth = 25;
-            this.dencangiatri.Name = "dencangiatri";
-            this.dencangiatri.Visible = true;
-            this.dencangiatri.VisibleIndex = 2;
-            this.dencangiatri.Width = 94;
-            // 
             // frm_KhuyenMaiTheoHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -414,13 +415,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
             this.panelControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ckb_KetThuc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_NgayLap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_LC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ckb_KetThuc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txb_ĐT.Properties)).EndInit();

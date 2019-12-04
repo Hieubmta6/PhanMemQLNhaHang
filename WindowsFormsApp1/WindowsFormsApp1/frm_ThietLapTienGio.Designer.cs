@@ -40,17 +40,7 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.STTThietLapGio = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.MaKV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TenKV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.MaThoiD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.TenTD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GB = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.SD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.STT = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -61,17 +51,27 @@
             this.giaban = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Sudung = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
+            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.STTDsNgayLe = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NgayLe = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.btn_Them = new DevExpress.XtraEditors.SimpleButton();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.STTThietLapGio = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaKV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenKV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaThoiD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenTD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GB = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -81,17 +81,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -151,6 +151,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(94, 29);
             this.btn_Dong.TabIndex = 13;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Luu
             // 
@@ -198,115 +199,13 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(926, 501);
             this.xtraTabPage1.Text = "xtraTabPage1";
             // 
-            // xtraTabPage2
+            // labelControl2
             // 
-            this.xtraTabPage2.Controls.Add(this.btn_Them);
-            this.xtraTabPage2.Controls.Add(this.comboBoxEdit1);
-            this.xtraTabPage2.Controls.Add(this.labelControl4);
-            this.xtraTabPage2.Controls.Add(this.labelControl3);
-            this.xtraTabPage2.Controls.Add(this.gridControl3);
-            this.xtraTabPage2.Controls.Add(this.gridControl2);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(926, 501);
-            this.xtraTabPage2.Text = "xtraTabPage2";
-            // 
-            // gridControl2
-            // 
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gridControl2.Location = new System.Drawing.Point(0, 0);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemCheckEdit2});
-            this.gridControl2.Size = new System.Drawing.Size(926, 216);
-            this.gridControl2.TabIndex = 1;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
-            // 
-            // gridView2
-            // 
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.STTThietLapGio,
-            this.MaKV,
-            this.TenKV,
-            this.MaThoiD,
-            this.TenTD,
-            this.GB,
-            this.SD});
-            this.gridView2.GridControl = this.gridControl2;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsView.EnableAppearanceEvenRow = true;
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            this.gridView2.OptionsView.ShowIndicator = false;
-            // 
-            // STTThietLapGio
-            // 
-            this.STTThietLapGio.Caption = "STT";
-            this.STTThietLapGio.MinWidth = 25;
-            this.STTThietLapGio.Name = "STTThietLapGio";
-            this.STTThietLapGio.Visible = true;
-            this.STTThietLapGio.VisibleIndex = 0;
-            this.STTThietLapGio.Width = 94;
-            // 
-            // MaKV
-            // 
-            this.MaKV.Caption = "Mã khu vực";
-            this.MaKV.MinWidth = 25;
-            this.MaKV.Name = "MaKV";
-            this.MaKV.Visible = true;
-            this.MaKV.VisibleIndex = 1;
-            this.MaKV.Width = 94;
-            // 
-            // TenKV
-            // 
-            this.TenKV.Caption = "Tên khu vực";
-            this.TenKV.MinWidth = 25;
-            this.TenKV.Name = "TenKV";
-            this.TenKV.Visible = true;
-            this.TenKV.VisibleIndex = 2;
-            this.TenKV.Width = 94;
-            // 
-            // MaThoiD
-            // 
-            this.MaThoiD.Caption = "Mã thời điểm";
-            this.MaThoiD.MinWidth = 25;
-            this.MaThoiD.Name = "MaThoiD";
-            this.MaThoiD.Visible = true;
-            this.MaThoiD.VisibleIndex = 3;
-            this.MaThoiD.Width = 94;
-            // 
-            // TenTD
-            // 
-            this.TenTD.Caption = "Tên thời điểm";
-            this.TenTD.MinWidth = 25;
-            this.TenTD.Name = "TenTD";
-            this.TenTD.Visible = true;
-            this.TenTD.VisibleIndex = 4;
-            this.TenTD.Width = 94;
-            // 
-            // GB
-            // 
-            this.GB.Caption = "Giá bán";
-            this.GB.MinWidth = 25;
-            this.GB.Name = "GB";
-            this.GB.Visible = true;
-            this.GB.VisibleIndex = 5;
-            this.GB.Width = 94;
-            // 
-            // SD
-            // 
-            this.SD.Caption = "Sử dụng";
-            this.SD.ColumnEdit = this.repositoryItemCheckEdit2;
-            this.SD.MinWidth = 25;
-            this.SD.Name = "SD";
-            this.SD.Visible = true;
-            this.SD.VisibleIndex = 6;
-            this.SD.Width = 94;
-            // 
-            // repositoryItemCheckEdit2
-            // 
-            this.repositoryItemCheckEdit2.AutoHeight = false;
-            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            this.labelControl2.Location = new System.Drawing.Point(11, 7);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(486, 17);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "Danh sách các ngày trong tuần (Ưu tiên thiết lập tiền giwof Ngày lễ - cuối tuần)";
             // 
             // gridControl1
             // 
@@ -407,13 +306,51 @@
             this.repositoryItemCheckEdit1.AutoHeight = false;
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
             // 
-            // labelControl2
+            // xtraTabPage2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(11, 7);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(486, 17);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "Danh sách các ngày trong tuần (Ưu tiên thiết lập tiền giwof Ngày lễ - cuối tuần)";
+            this.xtraTabPage2.Controls.Add(this.btn_Them);
+            this.xtraTabPage2.Controls.Add(this.comboBoxEdit1);
+            this.xtraTabPage2.Controls.Add(this.labelControl4);
+            this.xtraTabPage2.Controls.Add(this.labelControl3);
+            this.xtraTabPage2.Controls.Add(this.gridControl3);
+            this.xtraTabPage2.Controls.Add(this.gridControl2);
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(926, 501);
+            this.xtraTabPage2.Text = "xtraTabPage2";
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Them.ImageOptions.SvgImage")));
+            this.btn_Them.Location = new System.Drawing.Point(757, 249);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(94, 29);
+            this.btn_Them.TabIndex = 11;
+            this.btn_Them.Text = "Thêm";
+            // 
+            // comboBoxEdit1
+            // 
+            this.comboBoxEdit1.Location = new System.Drawing.Point(616, 253);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Size = new System.Drawing.Size(125, 22);
+            this.comboBoxEdit1.TabIndex = 5;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(494, 256);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(116, 17);
+            this.labelControl4.TabIndex = 4;
+            this.labelControl4.Text = "Chọn ngày ngày lễ";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(11, 256);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(113, 17);
+            this.labelControl3.TabIndex = 3;
+            this.labelControl3.Text = "Danh sách ngày lễ";
             // 
             // gridControl3
             // 
@@ -472,39 +409,103 @@
             this.repositoryItemCheckEdit3.AutoHeight = false;
             this.repositoryItemCheckEdit3.Name = "repositoryItemCheckEdit3";
             // 
-            // labelControl3
+            // gridControl2
             // 
-            this.labelControl3.Location = new System.Drawing.Point(11, 256);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(113, 17);
-            this.labelControl3.TabIndex = 3;
-            this.labelControl3.Text = "Danh sách ngày lễ";
+            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gridControl2.Location = new System.Drawing.Point(0, 0);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemCheckEdit2});
+            this.gridControl2.Size = new System.Drawing.Size(926, 216);
+            this.gridControl2.TabIndex = 1;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
             // 
-            // labelControl4
+            // gridView2
             // 
-            this.labelControl4.Location = new System.Drawing.Point(494, 256);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(116, 17);
-            this.labelControl4.TabIndex = 4;
-            this.labelControl4.Text = "Chọn ngày ngày lễ";
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.STTThietLapGio,
+            this.MaKV,
+            this.TenKV,
+            this.MaThoiD,
+            this.TenTD,
+            this.GB,
+            this.SD});
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
+            this.gridView2.OptionsView.ShowIndicator = false;
             // 
-            // comboBoxEdit1
+            // STTThietLapGio
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(616, 253);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(125, 22);
-            this.comboBoxEdit1.TabIndex = 5;
+            this.STTThietLapGio.Caption = "STT";
+            this.STTThietLapGio.MinWidth = 25;
+            this.STTThietLapGio.Name = "STTThietLapGio";
+            this.STTThietLapGio.Visible = true;
+            this.STTThietLapGio.VisibleIndex = 0;
+            this.STTThietLapGio.Width = 94;
             // 
-            // btn_Them
+            // MaKV
             // 
-            this.btn_Them.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Them.ImageOptions.SvgImage")));
-            this.btn_Them.Location = new System.Drawing.Point(757, 249);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(94, 29);
-            this.btn_Them.TabIndex = 11;
-            this.btn_Them.Text = "Thêm";
+            this.MaKV.Caption = "Mã khu vực";
+            this.MaKV.MinWidth = 25;
+            this.MaKV.Name = "MaKV";
+            this.MaKV.Visible = true;
+            this.MaKV.VisibleIndex = 1;
+            this.MaKV.Width = 94;
+            // 
+            // TenKV
+            // 
+            this.TenKV.Caption = "Tên khu vực";
+            this.TenKV.MinWidth = 25;
+            this.TenKV.Name = "TenKV";
+            this.TenKV.Visible = true;
+            this.TenKV.VisibleIndex = 2;
+            this.TenKV.Width = 94;
+            // 
+            // MaThoiD
+            // 
+            this.MaThoiD.Caption = "Mã thời điểm";
+            this.MaThoiD.MinWidth = 25;
+            this.MaThoiD.Name = "MaThoiD";
+            this.MaThoiD.Visible = true;
+            this.MaThoiD.VisibleIndex = 3;
+            this.MaThoiD.Width = 94;
+            // 
+            // TenTD
+            // 
+            this.TenTD.Caption = "Tên thời điểm";
+            this.TenTD.MinWidth = 25;
+            this.TenTD.Name = "TenTD";
+            this.TenTD.Visible = true;
+            this.TenTD.VisibleIndex = 4;
+            this.TenTD.Width = 94;
+            // 
+            // GB
+            // 
+            this.GB.Caption = "Giá bán";
+            this.GB.MinWidth = 25;
+            this.GB.Name = "GB";
+            this.GB.Visible = true;
+            this.GB.VisibleIndex = 5;
+            this.GB.Width = 94;
+            // 
+            // SD
+            // 
+            this.SD.Caption = "Sử dụng";
+            this.SD.ColumnEdit = this.repositoryItemCheckEdit2;
+            this.SD.MinWidth = 25;
+            this.SD.Name = "SD";
+            this.SD.Visible = true;
+            this.SD.VisibleIndex = 6;
+            this.SD.Width = 94;
+            // 
+            // repositoryItemCheckEdit2
+            // 
+            this.repositoryItemCheckEdit2.AutoHeight = false;
+            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
             // 
             // frm_ThietLapTienGio
             // 
@@ -527,18 +528,18 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
-            this.xtraTabPage2.ResumeLayout(false);
-            this.xtraTabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
+            this.xtraTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             this.ResumeLayout(false);
 
         }

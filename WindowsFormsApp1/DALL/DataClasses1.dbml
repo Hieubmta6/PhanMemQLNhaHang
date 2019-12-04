@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QUANLYNHAHANG" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-BDFTKDM\SQLEXPRESS;Initial Catalog=QUANLYNHAHANG;Integrated Security=True" SettingsObjectName="DALL.Properties.Settings" SettingsPropertyName="QUANLYNHAHANGConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DMKho" Member="DMKhos">
+    <Type Name="DMKho">
+      <Column Name="MaKho" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKho_V" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoMacDinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HangHoa" Member="HangHoas">
+    <Type Name="HangHoa">
+      <Column Name="MaHang" Type="System.String" DbType="Char(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaHang2" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="TenHang_V" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenHang_E" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SuDung" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TinhTonKho" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CachTinhGiaVon" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="LoaiHH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NhomHang" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HienThi" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GiaBan" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KhachHang" Member="KhachHangs">
+    <Type Name="KhachHang">
+      <Column Name="MaKH" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKH_V" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SuDung" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MST" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LoaiKH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NhomKH" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="SinhNhat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KhuVuc" Member="KhuVucs">
+    <Type Name="KhuVuc">
+      <Column Name="MaKV" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKV_V" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenKV_E" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MayIn" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="STT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SuDung" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThoiDiem" Member="ThoiDiems">
+    <Type Name="ThoiDiem">
+      <Column Name="MaThoiDiem" Type="System.String" DbType="Char(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenThoiDiem" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GioBD" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

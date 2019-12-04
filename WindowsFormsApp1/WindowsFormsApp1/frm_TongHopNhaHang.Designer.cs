@@ -38,6 +38,14 @@
             this.NgayHT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.STT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.MAHANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Ban = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Giaban = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CKtienhang = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.tamtinh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Luyke = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.btn_TimKiem = new DevExpress.XtraEditors.SimpleButton();
@@ -56,14 +64,6 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.Ban = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.MAHANG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.SL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Giaban = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.CKtienhang = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.tamtinh = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Luyke = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -176,6 +176,78 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
             // 
+            // MAHANG
+            // 
+            this.MAHANG.Caption = "Mã Hàng";
+            this.MAHANG.MinWidth = 25;
+            this.MAHANG.Name = "MAHANG";
+            this.MAHANG.Visible = true;
+            this.MAHANG.VisibleIndex = 1;
+            this.MAHANG.Width = 94;
+            // 
+            // Ban
+            // 
+            this.Ban.Caption = "Bàn";
+            this.Ban.MinWidth = 25;
+            this.Ban.Name = "Ban";
+            this.Ban.Visible = true;
+            this.Ban.VisibleIndex = 10;
+            this.Ban.Width = 94;
+            // 
+            // SL
+            // 
+            this.SL.Caption = "S.L";
+            this.SL.MinWidth = 25;
+            this.SL.Name = "SL";
+            this.SL.Visible = true;
+            this.SL.VisibleIndex = 6;
+            this.SL.Width = 94;
+            // 
+            // Giaban
+            // 
+            this.Giaban.Caption = "Giá bán";
+            this.Giaban.MinWidth = 25;
+            this.Giaban.Name = "Giaban";
+            this.Giaban.Visible = true;
+            this.Giaban.VisibleIndex = 5;
+            this.Giaban.Width = 94;
+            // 
+            // Thanhtien
+            // 
+            this.Thanhtien.Caption = "Thành tiền";
+            this.Thanhtien.MinWidth = 25;
+            this.Thanhtien.Name = "Thanhtien";
+            this.Thanhtien.Visible = true;
+            this.Thanhtien.VisibleIndex = 11;
+            this.Thanhtien.Width = 94;
+            // 
+            // CKtienhang
+            // 
+            this.CKtienhang.Caption = "CK tiền hàng";
+            this.CKtienhang.MinWidth = 25;
+            this.CKtienhang.Name = "CKtienhang";
+            this.CKtienhang.Visible = true;
+            this.CKtienhang.VisibleIndex = 12;
+            this.CKtienhang.Width = 94;
+            // 
+            // tamtinh
+            // 
+            this.tamtinh.Caption = "tạm tính";
+            this.tamtinh.MinWidth = 25;
+            this.tamtinh.Name = "tamtinh";
+            this.tamtinh.Visible = true;
+            this.tamtinh.VisibleIndex = 13;
+            this.tamtinh.Width = 94;
+            // 
+            // Luyke
+            // 
+            this.Luyke.Caption = "Lũy kế";
+            this.Luyke.MinWidth = 25;
+            this.Luyke.Name = "Luyke";
+            this.Luyke.Visible = true;
+            this.Luyke.VisibleIndex = 14;
+            this.Luyke.Width = 94;
+            // 
             // gridControl1
             // 
             this.gridControl1.Location = new System.Drawing.Point(0, 153);
@@ -275,6 +347,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 47);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -351,78 +424,6 @@
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(1010, 10);
             this.panelControl4.TabIndex = 81;
-            // 
-            // Ban
-            // 
-            this.Ban.Caption = "Bàn";
-            this.Ban.MinWidth = 25;
-            this.Ban.Name = "Ban";
-            this.Ban.Visible = true;
-            this.Ban.VisibleIndex = 10;
-            this.Ban.Width = 94;
-            // 
-            // MAHANG
-            // 
-            this.MAHANG.Caption = "Mã Hàng";
-            this.MAHANG.MinWidth = 25;
-            this.MAHANG.Name = "MAHANG";
-            this.MAHANG.Visible = true;
-            this.MAHANG.VisibleIndex = 1;
-            this.MAHANG.Width = 94;
-            // 
-            // SL
-            // 
-            this.SL.Caption = "S.L";
-            this.SL.MinWidth = 25;
-            this.SL.Name = "SL";
-            this.SL.Visible = true;
-            this.SL.VisibleIndex = 6;
-            this.SL.Width = 94;
-            // 
-            // Giaban
-            // 
-            this.Giaban.Caption = "Giá bán";
-            this.Giaban.MinWidth = 25;
-            this.Giaban.Name = "Giaban";
-            this.Giaban.Visible = true;
-            this.Giaban.VisibleIndex = 5;
-            this.Giaban.Width = 94;
-            // 
-            // Thanhtien
-            // 
-            this.Thanhtien.Caption = "Thành tiền";
-            this.Thanhtien.MinWidth = 25;
-            this.Thanhtien.Name = "Thanhtien";
-            this.Thanhtien.Visible = true;
-            this.Thanhtien.VisibleIndex = 11;
-            this.Thanhtien.Width = 94;
-            // 
-            // CKtienhang
-            // 
-            this.CKtienhang.Caption = "CK tiền hàng";
-            this.CKtienhang.MinWidth = 25;
-            this.CKtienhang.Name = "CKtienhang";
-            this.CKtienhang.Visible = true;
-            this.CKtienhang.VisibleIndex = 12;
-            this.CKtienhang.Width = 94;
-            // 
-            // tamtinh
-            // 
-            this.tamtinh.Caption = "tạm tính";
-            this.tamtinh.MinWidth = 25;
-            this.tamtinh.Name = "tamtinh";
-            this.tamtinh.Visible = true;
-            this.tamtinh.VisibleIndex = 13;
-            this.tamtinh.Width = 94;
-            // 
-            // Luyke
-            // 
-            this.Luyke.Caption = "Lũy kế";
-            this.Luyke.MinWidth = 25;
-            this.Luyke.Name = "Luyke";
-            this.Luyke.Visible = true;
-            this.Luyke.VisibleIndex = 14;
-            this.Luyke.Width = 94;
             // 
             // frm_TongHopNhaHang
             // 

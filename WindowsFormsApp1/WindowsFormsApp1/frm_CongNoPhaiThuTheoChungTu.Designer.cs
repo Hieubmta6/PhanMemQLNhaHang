@@ -39,6 +39,9 @@
             this.MakH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DIENGIAI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TientrenHD = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dathanhtoan = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ConLai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Xuatexcel = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -56,9 +59,6 @@
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.btn_Dieukienloc = new DevExpress.XtraEditors.SimpleButton();
-            this.TientrenHD = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.dathanhtoan = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ConLai = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
@@ -181,6 +181,33 @@
             this.DIENGIAI.VisibleIndex = 7;
             this.DIENGIAI.Width = 94;
             // 
+            // TientrenHD
+            // 
+            this.TientrenHD.Caption = "Tiền Trên HĐ";
+            this.TientrenHD.MinWidth = 25;
+            this.TientrenHD.Name = "TientrenHD";
+            this.TientrenHD.Visible = true;
+            this.TientrenHD.VisibleIndex = 8;
+            this.TientrenHD.Width = 94;
+            // 
+            // dathanhtoan
+            // 
+            this.dathanhtoan.Caption = "Đã thanh toán";
+            this.dathanhtoan.MinWidth = 25;
+            this.dathanhtoan.Name = "dathanhtoan";
+            this.dathanhtoan.Visible = true;
+            this.dathanhtoan.VisibleIndex = 9;
+            this.dathanhtoan.Width = 94;
+            // 
+            // ConLai
+            // 
+            this.ConLai.Caption = "Còn lại";
+            this.ConLai.MinWidth = 25;
+            this.ConLai.Name = "ConLai";
+            this.ConLai.Visible = true;
+            this.ConLai.VisibleIndex = 10;
+            this.ConLai.Width = 94;
+            // 
             // panelControl5
             // 
             this.panelControl5.Controls.Add(this.btn_Xuatexcel);
@@ -224,6 +251,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 53);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_InAn
             // 
@@ -349,33 +377,6 @@
             this.btn_Dieukienloc.Size = new System.Drawing.Size(151, 29);
             this.btn_Dieukienloc.TabIndex = 0;
             this.btn_Dieukienloc.Text = "Điều kiện lọc";
-            // 
-            // TientrenHD
-            // 
-            this.TientrenHD.Caption = "Tiền Trên HĐ";
-            this.TientrenHD.MinWidth = 25;
-            this.TientrenHD.Name = "TientrenHD";
-            this.TientrenHD.Visible = true;
-            this.TientrenHD.VisibleIndex = 8;
-            this.TientrenHD.Width = 94;
-            // 
-            // dathanhtoan
-            // 
-            this.dathanhtoan.Caption = "Đã thanh toán";
-            this.dathanhtoan.MinWidth = 25;
-            this.dathanhtoan.Name = "dathanhtoan";
-            this.dathanhtoan.Visible = true;
-            this.dathanhtoan.VisibleIndex = 9;
-            this.dathanhtoan.Width = 94;
-            // 
-            // ConLai
-            // 
-            this.ConLai.Caption = "Còn lại";
-            this.ConLai.MinWidth = 25;
-            this.ConLai.Name = "ConLai";
-            this.ConLai.Visible = true;
-            this.ConLai.VisibleIndex = 10;
-            this.ConLai.Width = 94;
             // 
             // frm_CongNoPhaiThuTheoChungTu
             // 

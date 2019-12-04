@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAO;
 
 namespace WindowsFormsApp1
 {
     public partial class frm_ThemMoiKhachHang : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
+        KetNoi k = new KetNoi();
+
         public frm_ThemMoiKhachHang()
         {
             InitializeComponent();
@@ -19,9 +22,7 @@ namespace WindowsFormsApp1
 
         private void btn_Dong_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn có chắc muốn thoát không?",
-                "Error", MessageBoxButtons.YesNoCancel);
-            Application.Exit();
+            this.Close();
         }
     }
 }

@@ -51,9 +51,11 @@
             this.TenKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ĐT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.NguoiMua = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.NguoiBan = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.NhanVien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MST = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Email = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LoaiKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NhomKH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SinhNhat = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.btn_InAn = new DevExpress.XtraEditors.SimpleButton();
@@ -230,9 +232,11 @@
             this.TenKH,
             this.DiaChi,
             this.ĐT,
-            this.NguoiMua,
-            this.NguoiBan,
-            this.NhanVien});
+            this.MST,
+            this.Email,
+            this.LoaiKH,
+            this.NhomKH,
+            this.SinhNhat});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.AllowHtmlDrawGroups = false;
@@ -256,6 +260,7 @@
             // MaKH
             // 
             this.MaKH.Caption = "Mã KH";
+            this.MaKH.FieldName = "MaKH";
             this.MaKH.MinWidth = 22;
             this.MaKH.Name = "MaKH";
             this.MaKH.Visible = true;
@@ -265,6 +270,7 @@
             // TenKH
             // 
             this.TenKH.Caption = "Tên Khách Hàng";
+            this.TenKH.FieldName = "TenKH_V";
             this.TenKH.MinWidth = 22;
             this.TenKH.Name = "TenKH";
             this.TenKH.Visible = true;
@@ -274,6 +280,7 @@
             // DiaChi
             // 
             this.DiaChi.Caption = "Địa Chỉ ";
+            this.DiaChi.FieldName = "DiaChi";
             this.DiaChi.MinWidth = 22;
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.Visible = true;
@@ -283,40 +290,62 @@
             // ĐT
             // 
             this.ĐT.Caption = "Điện thoại";
-            this.ĐT.ColumnEdit = this.repositoryItemCheckEdit1;
+            this.ĐT.FieldName = "DienThoai";
             this.ĐT.MinWidth = 22;
             this.ĐT.Name = "ĐT";
             this.ĐT.Visible = true;
             this.ĐT.VisibleIndex = 4;
             this.ĐT.Width = 82;
             // 
-            // NguoiMua
+            // MST
             // 
-            this.NguoiMua.Caption = "Người Mua";
-            this.NguoiMua.ColumnEdit = this.repositoryItemCheckEdit2;
-            this.NguoiMua.MinWidth = 22;
-            this.NguoiMua.Name = "NguoiMua";
-            this.NguoiMua.Visible = true;
-            this.NguoiMua.VisibleIndex = 5;
-            this.NguoiMua.Width = 82;
+            this.MST.Caption = "Mã Số Thuế";
+            this.MST.FieldName = "MST";
+            this.MST.MinWidth = 25;
+            this.MST.Name = "MST";
+            this.MST.Visible = true;
+            this.MST.VisibleIndex = 5;
+            this.MST.Width = 94;
             // 
-            // NguoiBan
+            // Email
             // 
-            this.NguoiBan.Caption = "Người bán";
-            this.NguoiBan.MinWidth = 22;
-            this.NguoiBan.Name = "NguoiBan";
-            this.NguoiBan.Visible = true;
-            this.NguoiBan.VisibleIndex = 6;
-            this.NguoiBan.Width = 82;
+            this.Email.Caption = "Email";
+            this.Email.FieldName = "Email";
+            this.Email.MinWidth = 25;
+            this.Email.Name = "Email";
+            this.Email.Visible = true;
+            this.Email.VisibleIndex = 6;
+            this.Email.Width = 94;
             // 
-            // NhanVien
+            // LoaiKH
             // 
-            this.NhanVien.Caption = "Nhân Viên";
-            this.NhanVien.MinWidth = 22;
-            this.NhanVien.Name = "NhanVien";
-            this.NhanVien.Visible = true;
-            this.NhanVien.VisibleIndex = 7;
-            this.NhanVien.Width = 82;
+            this.LoaiKH.Caption = "Loại KH";
+            this.LoaiKH.FieldName = "LoaiKH";
+            this.LoaiKH.MinWidth = 25;
+            this.LoaiKH.Name = "LoaiKH";
+            this.LoaiKH.Visible = true;
+            this.LoaiKH.VisibleIndex = 7;
+            this.LoaiKH.Width = 94;
+            // 
+            // NhomKH
+            // 
+            this.NhomKH.Caption = "Nhóm KH";
+            this.NhomKH.FieldName = "NhomKH";
+            this.NhomKH.MinWidth = 25;
+            this.NhomKH.Name = "NhomKH";
+            this.NhomKH.Visible = true;
+            this.NhomKH.VisibleIndex = 8;
+            this.NhomKH.Width = 94;
+            // 
+            // SinhNhat
+            // 
+            this.SinhNhat.Caption = "Sinh Nhật";
+            this.SinhNhat.FieldName = "SinhNhat";
+            this.SinhNhat.MinWidth = 25;
+            this.SinhNhat.Name = "SinhNhat";
+            this.SinhNhat.Visible = true;
+            this.SinhNhat.VisibleIndex = 9;
+            this.SinhNhat.Width = 94;
             // 
             // gridControl1
             // 
@@ -330,6 +359,7 @@
             this.gridControl1.TabIndex = 63;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // panelControl4
             // 
@@ -445,6 +475,7 @@
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "DanhSachKhachHang";
+            this.Load += new System.EventHandler(this.frm_DanhSachKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
@@ -483,8 +514,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_Dieukienloc;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit2;
-        private DevExpress.XtraGrid.Columns.GridColumn NguoiBan;
-        private DevExpress.XtraGrid.Columns.GridColumn NguoiMua;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraGrid.Columns.GridColumn ĐT;
         private DevExpress.XtraGrid.Columns.GridColumn DiaChi;
@@ -498,12 +527,16 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraGrid.Columns.GridColumn NhanVien;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraGrid.Columns.GridColumn MST;
+        private DevExpress.XtraGrid.Columns.GridColumn Email;
+        private DevExpress.XtraGrid.Columns.GridColumn LoaiKH;
+        private DevExpress.XtraGrid.Columns.GridColumn NhomKH;
+        private DevExpress.XtraGrid.Columns.GridColumn SinhNhat;
     }
 }

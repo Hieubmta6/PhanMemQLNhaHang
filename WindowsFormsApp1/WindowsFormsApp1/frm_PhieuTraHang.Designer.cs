@@ -44,6 +44,9 @@
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+            this.ckb_KhoaChungTu = new DevExpress.XtraEditors.CheckEdit();
+            this.comboBoxEdit5 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
@@ -60,6 +63,10 @@
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.comboBoxEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
@@ -78,11 +85,12 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.STT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Mahang = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenHang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ĐVT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SoLuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DonGia = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.giavon = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
@@ -91,14 +99,6 @@
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.TenHang = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit5 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.ckb_KhoaChungTu = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -108,6 +108,8 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ckb_KhoaChungTu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_LoaiChung.Properties)).BeginInit();
@@ -117,6 +119,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txb_LC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
@@ -132,11 +137,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ckb_KhoaChungTu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -190,6 +190,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(94, 29);
             this.btn_Dong.TabIndex = 8;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Luu
             // 
@@ -306,6 +307,31 @@
             this.panelControl5.Name = "panelControl5";
             this.panelControl5.Size = new System.Drawing.Size(498, 180);
             this.panelControl5.TabIndex = 85;
+            // 
+            // ckb_KhoaChungTu
+            // 
+            this.ckb_KhoaChungTu.Location = new System.Drawing.Point(357, 105);
+            this.ckb_KhoaChungTu.Name = "ckb_KhoaChungTu";
+            this.ckb_KhoaChungTu.Properties.Caption = "Khóa số chứng từ";
+            this.ckb_KhoaChungTu.Size = new System.Drawing.Size(125, 21);
+            this.ckb_KhoaChungTu.TabIndex = 34;
+            // 
+            // comboBoxEdit5
+            // 
+            this.comboBoxEdit5.Location = new System.Drawing.Point(104, 150);
+            this.comboBoxEdit5.Name = "comboBoxEdit5";
+            this.comboBoxEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit5.Size = new System.Drawing.Size(144, 22);
+            this.comboBoxEdit5.TabIndex = 33;
+            // 
+            // labelControl20
+            // 
+            this.labelControl20.Location = new System.Drawing.Point(15, 156);
+            this.labelControl20.Name = "labelControl20";
+            this.labelControl20.Size = new System.Drawing.Size(79, 16);
+            this.labelControl20.TabIndex = 32;
+            this.labelControl20.Text = "Ngày Hóa đơn";
             // 
             // labelControl19
             // 
@@ -451,6 +477,39 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(557, 180);
             this.panelControl2.TabIndex = 84;
+            // 
+            // comboBoxEdit4
+            // 
+            this.comboBoxEdit4.Location = new System.Drawing.Point(432, 116);
+            this.comboBoxEdit4.Name = "comboBoxEdit4";
+            this.comboBoxEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit4.Size = new System.Drawing.Size(120, 22);
+            this.comboBoxEdit4.TabIndex = 25;
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Location = new System.Drawing.Point(275, 119);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(75, 17);
+            this.labelControl15.TabIndex = 19;
+            this.labelControl15.Text = "NV lập phiếu";
+            // 
+            // comboBoxEdit3
+            // 
+            this.comboBoxEdit3.Location = new System.Drawing.Point(168, 116);
+            this.comboBoxEdit3.Name = "comboBoxEdit3";
+            this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit3.Size = new System.Drawing.Size(101, 22);
+            this.comboBoxEdit3.TabIndex = 18;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(356, 116);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(76, 22);
+            this.textEdit2.TabIndex = 24;
             // 
             // comboBoxEdit2
             // 
@@ -606,6 +665,15 @@
             this.Mahang.VisibleIndex = 1;
             this.Mahang.Width = 94;
             // 
+            // TenHang
+            // 
+            this.TenHang.Caption = "Tên hàng";
+            this.TenHang.MinWidth = 25;
+            this.TenHang.Name = "TenHang";
+            this.TenHang.Visible = true;
+            this.TenHang.VisibleIndex = 8;
+            this.TenHang.Width = 94;
+            // 
             // ĐVT
             // 
             this.ĐVT.Caption = "ĐVT";
@@ -633,15 +701,6 @@
             this.DonGia.VisibleIndex = 4;
             this.DonGia.Width = 94;
             // 
-            // Thanhtien
-            // 
-            this.Thanhtien.Caption = "Thành Tiền";
-            this.Thanhtien.MinWidth = 25;
-            this.Thanhtien.Name = "Thanhtien";
-            this.Thanhtien.Visible = true;
-            this.Thanhtien.VisibleIndex = 5;
-            this.Thanhtien.Width = 94;
-            // 
             // giavon
             // 
             this.giavon.Caption = "Giá vốn";
@@ -650,6 +709,15 @@
             this.giavon.Visible = true;
             this.giavon.VisibleIndex = 7;
             this.giavon.Width = 94;
+            // 
+            // Thanhtien
+            // 
+            this.Thanhtien.Caption = "Thành Tiền";
+            this.Thanhtien.MinWidth = 25;
+            this.Thanhtien.Name = "Thanhtien";
+            this.Thanhtien.Visible = true;
+            this.Thanhtien.VisibleIndex = 5;
+            this.Thanhtien.Width = 94;
             // 
             // GhiChu
             // 
@@ -719,73 +787,6 @@
             this.labelControl11.TabIndex = 3;
             this.labelControl11.Text = "Tiền thuế";
             // 
-            // TenHang
-            // 
-            this.TenHang.Caption = "Tên hàng";
-            this.TenHang.MinWidth = 25;
-            this.TenHang.Name = "TenHang";
-            this.TenHang.Visible = true;
-            this.TenHang.VisibleIndex = 8;
-            this.TenHang.Width = 94;
-            // 
-            // comboBoxEdit3
-            // 
-            this.comboBoxEdit3.Location = new System.Drawing.Point(168, 116);
-            this.comboBoxEdit3.Name = "comboBoxEdit3";
-            this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit3.Size = new System.Drawing.Size(101, 22);
-            this.comboBoxEdit3.TabIndex = 18;
-            // 
-            // comboBoxEdit4
-            // 
-            this.comboBoxEdit4.Location = new System.Drawing.Point(432, 116);
-            this.comboBoxEdit4.Name = "comboBoxEdit4";
-            this.comboBoxEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit4.Size = new System.Drawing.Size(120, 22);
-            this.comboBoxEdit4.TabIndex = 25;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(356, 116);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(76, 22);
-            this.textEdit2.TabIndex = 24;
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Location = new System.Drawing.Point(275, 119);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(75, 17);
-            this.labelControl15.TabIndex = 19;
-            this.labelControl15.Text = "NV lập phiếu";
-            // 
-            // labelControl20
-            // 
-            this.labelControl20.Location = new System.Drawing.Point(15, 156);
-            this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(79, 16);
-            this.labelControl20.TabIndex = 32;
-            this.labelControl20.Text = "Ngày Hóa đơn";
-            // 
-            // comboBoxEdit5
-            // 
-            this.comboBoxEdit5.Location = new System.Drawing.Point(104, 150);
-            this.comboBoxEdit5.Name = "comboBoxEdit5";
-            this.comboBoxEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit5.Size = new System.Drawing.Size(144, 22);
-            this.comboBoxEdit5.TabIndex = 33;
-            // 
-            // ckb_KhoaChungTu
-            // 
-            this.ckb_KhoaChungTu.Location = new System.Drawing.Point(357, 105);
-            this.ckb_KhoaChungTu.Name = "ckb_KhoaChungTu";
-            this.ckb_KhoaChungTu.Properties.Caption = "Khóa số chứng từ";
-            this.ckb_KhoaChungTu.Size = new System.Drawing.Size(125, 21);
-            this.ckb_KhoaChungTu.TabIndex = 34;
-            // 
             // frm_PhieuTraHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -809,6 +810,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
             this.panelControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ckb_KhoaChungTu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbo_LoaiChung.Properties)).EndInit();
@@ -819,6 +822,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
@@ -835,11 +841,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ckb_KhoaChungTu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

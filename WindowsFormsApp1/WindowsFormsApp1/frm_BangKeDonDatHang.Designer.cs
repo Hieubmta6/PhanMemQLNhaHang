@@ -60,13 +60,13 @@
             this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Đienthoai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Thuesuat = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.TienThue = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TienHang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tiencoc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Tongtien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ghichu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Xuatexcel = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
@@ -122,6 +122,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(82, 29);
             this.btn_Dong.TabIndex = 16;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_Xoa
             // 
@@ -407,16 +408,6 @@
             this.Thuesuat.VisibleIndex = 10;
             this.Thuesuat.Width = 94;
             // 
-            // repositoryItemCheckEdit1
-            // 
-            this.repositoryItemCheckEdit1.AutoHeight = false;
-            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
-            // 
-            // repositoryItemCheckEdit2
-            // 
-            this.repositoryItemCheckEdit2.AutoHeight = false;
-            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
-            // 
             // TienThue
             // 
             this.TienThue.Caption = "Tiền thuế";
@@ -462,6 +453,16 @@
             this.ghichu.VisibleIndex = 15;
             this.ghichu.Width = 94;
             // 
+            // repositoryItemCheckEdit1
+            // 
+            this.repositoryItemCheckEdit1.AutoHeight = false;
+            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
+            // 
+            // repositoryItemCheckEdit2
+            // 
+            this.repositoryItemCheckEdit2.AutoHeight = false;
+            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            // 
             // panelControl5
             // 
             this.panelControl5.Controls.Add(this.btn_Xuatexcel);
@@ -473,7 +474,7 @@
             // 
             // btn_Xuatexcel
             // 
-            this.btn_Xuatexcel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btn_Xuatexcel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Xuatexcel.ImageOptions.SvgImage")));
             this.btn_Xuatexcel.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.btn_Xuatexcel.Location = new System.Drawing.Point(10, 5);
             this.btn_Xuatexcel.Name = "btn_Xuatexcel";

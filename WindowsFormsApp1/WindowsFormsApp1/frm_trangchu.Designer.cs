@@ -520,7 +520,7 @@
             this.pn_chinh.Size = new System.Drawing.Size(1355, 483);
             this.pn_chinh.TabIndex = 19;
             // 
-            // Form2
+            // frm_trangchu
             // 
             this.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Appearance.Options.UseBackColor = true;
@@ -530,8 +530,9 @@
             this.Controls.Add(this.pn_chinh);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form2";
+            this.Name = "frm_trangchu";
             this.Text = "Form2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_trangchu_FormClosing);
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

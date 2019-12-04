@@ -34,6 +34,11 @@
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.btn_Kiemtradulieu = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Luu = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Dong = new DevExpress.XtraEditors.SimpleButton();
@@ -59,16 +64,13 @@
             this.TenHang_E = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DVT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NhomHang = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdio_Hanghoa.Properties)).BeginInit();
@@ -79,8 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -133,6 +133,60 @@
             this.panelControl2.Size = new System.Drawing.Size(1205, 82);
             this.panelControl2.TabIndex = 37;
             // 
+            // panelControl3
+            // 
+            this.panelControl3.Controls.Add(this.simpleButton1);
+            this.panelControl3.Controls.Add(this.simpleButton2);
+            this.panelControl3.Controls.Add(this.simpleButton3);
+            this.panelControl3.Controls.Add(this.labelControl2);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl3.Location = new System.Drawing.Point(2, 2);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(782, 82);
+            this.panelControl3.TabIndex = 38;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(361, 2);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(210, 78);
+            this.simpleButton1.TabIndex = 17;
+            this.simpleButton1.Text = "Kiểm tra dữ liệu";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.simpleButton2.Location = new System.Drawing.Point(571, 2);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(115, 78);
+            this.simpleButton2.TabIndex = 16;
+            this.simpleButton2.Text = "Lưu";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.simpleButton3.Location = new System.Drawing.Point(686, 2);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(94, 78);
+            this.simpleButton3.TabIndex = 13;
+            this.simpleButton3.Text = "Đóng";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(20, 22);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(222, 34);
+            this.labelControl2.TabIndex = 0;
+            this.labelControl2.Text = "Đổi mã danh mục";
+            // 
             // btn_Kiemtradulieu
             // 
             this.btn_Kiemtradulieu.Appearance.ForeColor = System.Drawing.Color.Black;
@@ -164,6 +218,7 @@
             this.btn_Dong.Size = new System.Drawing.Size(94, 78);
             this.btn_Dong.TabIndex = 13;
             this.btn_Dong.Text = "Đóng";
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // lb_DoiMadanhmuc
             // 
@@ -384,60 +439,6 @@
             this.NhomHang.VisibleIndex = 9;
             this.NhomHang.Width = 94;
             // 
-            // panelControl3
-            // 
-            this.panelControl3.Controls.Add(this.simpleButton1);
-            this.panelControl3.Controls.Add(this.simpleButton2);
-            this.panelControl3.Controls.Add(this.simpleButton3);
-            this.panelControl3.Controls.Add(this.labelControl2);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl3.Location = new System.Drawing.Point(2, 2);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(782, 82);
-            this.panelControl3.TabIndex = 38;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(361, 2);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(210, 78);
-            this.simpleButton1.TabIndex = 17;
-            this.simpleButton1.Text = "Kiểm tra dữ liệu";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(571, 2);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(115, 78);
-            this.simpleButton2.TabIndex = 16;
-            this.simpleButton2.Text = "Lưu";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(686, 2);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(94, 78);
-            this.simpleButton3.TabIndex = 13;
-            this.simpleButton3.Text = "Đóng";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(20, 22);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(222, 34);
-            this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "Đổi mã danh mục";
-            // 
             // frm_DoiMaDanhMuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -460,6 +461,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            this.panelControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rdio_Hanghoa.Properties)).EndInit();
@@ -470,9 +474,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
-            this.panelControl3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
